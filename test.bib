@@ -530,3 +530,3204 @@
 		treatment both possible and natural.},
   keywords  = {Constraint logic programming, Boolean logic, Abstract interpretation},
 }
+
+@Proceedings{Bow-Son_LOPSTR24,
+  editor    = {Juliana Bowles and Harald S{\o}ndergaard},
+  title     = {Logic-Based Program Synthesis and Transformation:
+		Proceedings of the 34th International Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {14919},
+  publisher = {Springer},
+  year      = {2024},
+  doi       = {10.1007/978-3-031-71294-4},
+  keywords  = {Program transformation, Program synthesis, Program analysis, Inversion, Specification, Logic-based methods, Logic programming},
+}
+
+@Inproceedings{Cha-Ste-Son-Had_REES09,
+  author    = {Rosemary Chang and
+		Linda Stern and
+		Harald S{\o}ndergaard and
+		Roger Hadgraft},
+  title     = {Places for Learning Engineering: 
+		A Preliminary Report on Informal Learning Spaces},
+  booktitle = {Proceedings of the 2009 Research in Engineering Education 
+		Symposium},
+  location  = {Palm Cove, Queensland},
+  year      = {2009},
+  keywords  = {Education},
+}
+
+@Inproceedings{Cod-Gen-Son-Stu_ICLP01,
+  author    = {Michael Codish and 
+		Samir Genaim and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Higher-Precision Groundness Analysis},
+  editor    = {P. Codognet},
+  booktitle = {Logic Programming: Proceedings of the 17th International 
+		Conference},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {2237},
+  pages     = {135--149},
+  publisher = {Springer},
+  year      = {2001},
+  doi       = {10.1007/3-540-45635-x_17},
+  abstract  = {Groundness analysis of logic programs using Pos-based abstract
+		interpretation is one of the clear success stories of the last
+		decade in the area of logic program analysis. In this work we
+		identify two problems with the Pos domain, the multiplicity and
+		sign problems, that arise independently in groundness and 
+		uniqueness analysis. We describe how these problems can be 
+		solved using an analysis based on a domain Size for inferring 
+		term size relations.  However this solution has its own 
+		shortcomings because it involves a widening operator which leads
+		to a loss of Pos information. Inspired by Pos, Size and the
+		Lsign domain for abstract linear arithmetic constraints we
+		introduce a new domain Lpos, and show how it can be used for
+		groundness and uniqueness analysis. The idea is to use the sign
+		information of Lsign to improve the widening of Size so that
+		it does not lose Pos information. We prove that the resulting 
+		analyses using Lpos are uniformly more precise than those using
+		Pos.},
+  keywords  = {Boolean logic, Abstract domains, Abstract interpretation, Logic programming},
+}
+
+@Article{Cod-Son-Stu_TOPLAS99,
+  author   = {Michael Codish and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title    = {Sharing and Groundness Dependencies in Logic Programs},
+  journal  = {ACM Transactions on Programming Languages and Systems},
+  volume   = {21},
+  number   = {5},
+  pages    = {948--976},
+  year     = {1999},
+  doi      = {10.1145/330249.330252},
+  abstract = {We investigate Jacobs and Langen's \textsf{Sharing} domain, 
+		introduced for the analysis of variable sharing in logic 
+		programs, and show that it is isomorphic to Marriott and 
+		S{\o}ndergaard's \textsf{Pos} domain, introduced for the 
+		analysis of groundness dependencies.  Our key idea
+		is to view the sets of variables in a \textsf{Sharing} 
+		domain element as the models of a corresponding Boolean 
+		function.  This leads to a recasting of sharing analysis 
+		in terms of the property of ``not being affected by the 
+		binding of a \emph{single} variable.''  Such an
+		``unaffectedness dependency'' analysis has close 
+		connections with groundness dependency analysis using 
+		positive Boolean functions.  This new view improves our 
+		understanding of sharing analysis, and leads to an elegant
+		expression of its combination with groundness dependency
+		analysis based on the reduced product of \textsf{Sharing} 
+		and \textsf{Pos}.  It also opens up new avenues for the 
+		efficient implementation of sharing analysis, for example 
+		using reduced order binary decision diagrams, as well as
+		efficient implementation of the reduced product, using 
+		domain factorizations.},
+  keywords  = {Boolean logic, Abstract domains, Abstract interpretation, Logic programming},
+}
+
+@Incollection{Cod-Son_JonesFest02,
+  author    = {Michael Codish and 
+		Harald S{\o}ndergaard},
+  title     = {Meta-Circular Abstract Interpretation in {Prolog}},
+  editor    = {T. Mogensen and D. Schmidt and I. H. Sudborough},
+  booktitle = {The Essence of Computation: Complexity, Analysis, Transformation},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {2566},
+  pages     = {109--134},
+  publisher = {Springer},
+  year      = {2002},
+  doi       = {10.1007/3-540-36377-7_6},
+  abstract  = {We give an introduction to the meta-circular approach to the
+		abstract interpretation of logic programs.  This approach is
+		particularly useful for prototyping and for introductory 
+		classes on abstract interpretation.  Using interpreters, 
+		students can immediately write, adapt, and experiment with 
+		interpreters and working dataflow analysers.  We use a simple
+		meta-circular interpreter, based on a ``non-ground $T_P$'' 
+		semantics, as a generic analysis engine.  Instantiating the
+		engine is a matter of providing an appropriate domain of
+		approximations, together with definitions of ``abstract'' 
+		unification and disjunction.  Small changes of the interpreter
+		let us vary both what can be ``observed'' by an analyser, and
+		how fixed point computation is done.  Amongst the dataflow 
+		analyses used to exemplify this approach are a parity analysis,
+		groundness dependency analysis, call patterns, depth-$k$ 
+		analysis, and a ``pattern'' analysis to establish most specific
+		generalisations of calls and success sets.},
+  keywords  = {Abstract interpretation, Abstract domains, Logic programming, Prolog},
+}
+
+@Inproceedings{Cod-Son_PLILP98,
+  author    = {Michael Codish and 
+		Harald S{\o}ndergaard},
+  title     = {The {Boolean} Logic of Set Sharing Analysis},
+  editor    = {C. Palamidessi and H. Glaser and K. Meinke},
+  booktitle = {Principles of Declarative Programming},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1490},
+  pages     = {89--101},
+  publisher = {Springer},
+  year      = {1998},
+  doi       = {10.1007/bfb0056609},
+  abstract  = {We show that Jacobs and Langen's domain for set-sharing 
+		analysis is isomorphic to the domain of positive Boolean 
+		functions, introduced by Marriott and S{\o}ndergaard for 
+		groundness dependency analysis. Viewing a set-sharing 
+		description as a minterm representation of a Boolean 
+		function leads to re-casting sharing analysis as an
+		instantiation dependency analysis. The key idea is to 
+		view the sets of variables in a sharing domain element 
+		as the models of a Boolean function. In this way, sharing 
+		sets are precisely dual negated positive Boolean functions. 
+		This new view improves our understanding of sharing 
+		analysis considerably and opens up new avenues for the
+		efficient implementation of this kind of analysis, for 
+		example using ROBDDs. To this end we express Jacobs and 
+		Langen's abstract operations for set sharing in logical form.},
+  keywords  = {Boolean logic, Abstract domains, Abstract interpretation, Logic programming},
+}
+
+@inproceedings{Cor-Gan-Nav-Sch-Son-Stu_LOPSTR14,
+  author    = {J. Robert M. Cornish and 
+		Graeme Gange and 
+		Jorge Navas and
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Analyzing Array Manipulating Programs by Program Transformation},
+  editor    = {M. Proietti and H. Seki},
+  booktitle = {Logic-Based Program Synthesis and Transformation:
+                Proceedings of the 24th International Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {8981},
+  pages     = {3--20},
+  publisher = {Springer International},
+  year      = {2015},
+  doi       = {10.1007/978-3-319-17822-6_1},
+  abstract  = {We explore a transformational approach to the problem 
+		of verifying simple array-manipulating programs.  
+		Traditionally, verification of such programs requires 
+		intricate analysis machinery to reason with universally
+		quantified statements about symbolic array segments, 
+		such as ``every data item stored in the segment A[i] 
+		to A[j] is equal to the corresponding item stored in the
+		segment B[i] to B[j].'' We define a simple abstract 
+		machine which allows for set-valued variables and we 
+		show how to translate programs with array operations to
+		array-free code for this machine.  For the purpose of 
+		program analysis, the translated program remains faithful
+		to the semantics of array manipulation.  Based on our 
+		implementation in LLVM, we evaluate the approach with
+		respect to its ability to extract useful invariants and 
+		the cost in terms of code size.},
+  keywords  = {Program transformation, Static analysis, Array analysis},
+}
+
+@Inproceedings{Cre-Mar-Son_AI90,
+  author    = {Roberto Cremonini and 
+		Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title	    = {A General Theory for Abstraction},
+  editor    = {C. P. Tsang},
+  booktitle = {AI '90: Proceedings of the Fourth Australian Joint Conference on 
+			Artificial Intelligence}, 
+  pages     = {121--134},
+  publisher = {World Scientific Publ.},
+  year	    = {1990},
+  abstract  = {Abstraction is the process of mapping one representation of 
+		a problem into another representation so as to simplify 
+		reasoning while preserving the essence of the problem.
+		It has been investigated in many different areas of computer
+		science. In artificial intelligence, abstraction is used in
+		automated theorem proving, problem solving, planning, common
+		sense reasoning and qualitative reasoning. In dataflow 
+		analysis of programs, it has been formalized in the theory 
+		of abstract interpretation. However, the possible 
+		connections between research on abstraction in artificial 
+		intelligence and dataflow analysis have gone unnoticed until
+		now. This paper investigates these connections and
+		provides a general theory of abstraction for artificial 
+		intelligence. In particular, we present a method for 
+		building an ``optimal'' abstraction and give general 
+		sufficient conditions for the abstraction to be ``safe.''
+		The usefulness and generality of our theory is illustrated 
+		with a number of example applications and by comparisons 
+		with related work.},
+  keywords  = {Abstract interpretation, Artificial intelligence},
+}
+
+@Inproceedings{Crn-Kel-Son_SAS96,
+  author    = {Lobel Crnogorac and 
+		Andrew Kelly and 
+		Harald S{\o}ndergaard},
+  title     = {A Comparison of Three Occur-Check Analysers},
+  editor    = {R. Cousot and D. A. Schmidt},
+  booktitle = {Static Analysis: Proceedings of the Third International 
+		Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1145},
+  pages     = {159--173},
+  publisher = {Springer},
+  year      = {1996},
+  doi       = {10.1007/3-540-61739-6_40},
+  abstract  = {A well known problem with many Prolog interpreters and compilers
+		is the lack of occur-check in the implementation of the 
+		unification algorithm. This means that such systems are unsound
+		with respect to first-order predicate logic. Static analysis 
+		offers an appealing approach to the problem of occur-check 
+		reduction, that is, the safe omission of occur-checks in 
+		unification. We compare, for the first time, three static 
+		methods that have been suggested for occur-check reduction, 
+		two based on assigning ``modes'' to programs and one which 
+		uses abstract interpretation. In each case, the analysis or 
+		some essential part of it had not been implemented so far.
+		Of the mode-based methods, one is due to Chadha and Plaisted
+		and the other is due to Apt and Pellegrini. The method using 
+		abstract interpretation is based on earlier work by Plaisted, 
+		S{\o}ndergaard and others who have developed groundness and 
+		sharing analyses for logic programs. The conclusion is that a 
+		truly global analysis based on abstract interpretation leads 
+		to markedly higher precision and hence fewer occur-checks at 
+		run-time. Given the potential run-time speedups, a precise 
+		analysis would be well worth the extra time.},
+  keywords  = {Abstract interpretation, Groundness analysis, Sharing analysis, Unification, Prolog, Compilation},
+}
+
+@inproceedings{Dav-Pea-Stu-Son_AAMAS15,
+  author    = {Toby O. Davies and 
+		Adrian R. Pearce and
+                Peter J. Stuckey and 
+		Harald S{\o}ndergaard},
+  title     = {Optimisation and Relaxation for Planning in the Situation
+                Calculus},
+  editor    = {R. H. Bordini and E. Elkind and G. Weiss and P. Yolum},
+  booktitle = {Proceedings of the 14th International Conference
+                on Autonomous Agents and Multiagent Systems (AAMAS 2015)},
+  pages     = {1141--1149},
+  publisher = {IFAAMAS},
+  year      = {2015},  
+  url_Paper = {http://www.aamas2015.com/en/AAMAS_2015_USB/aamas/p1141.pdf},
+  abstract  = {The situation calculus can express rich agent behaviours and 
+		goals and facilitates the reduction of complex planning 
+		problems to theorem proving. However, in many planning 
+		problems, solution quality is critically important, and the 
+		achievable quality is not necessarily known in advance.
+		Existing \textsc{Golog} implementations merely search for a 
+		\emph{legal} plan, typically relying on depth-first search to 
+		find an execution. We illustrate where existing strategies 
+		will not terminate when quality is considered, and to overcome
+		this limitation we formally introduce the notion of \emph{cost}
+		to simplify the search for a solution. The main contribution is
+		a new class of relaxations of the planning problem, termed 
+		\emph{precondition relaxations}, based on Lagrangian relaxation.
+		We show how this facilitates optimisation of a restricted class
+		of \textsc{Golog} programs for which plan existence (under a 
+		cost budget) is decidable. It allows for tractably computing 
+		relaxations to the planning problem and leads to a general, 
+		\emph{blackbox}, approach to optimally solving multi-agent 
+		planning problems without explicit reference to the semantics 
+		of interleaved concurrency.},
+  keywords  = {Planning, Artificial intelligence},
+}
+
+@inproceedings{Dav-Pea-Stu-Son_ICAPS14,
+  author    = {Toby O. Davies and 
+		Adrian R. Pearce and
+                Peter J. Stuckey and 
+		Harald S{\o}ndergaard},
+  title     = {Fragment-Based Planning Using Column Generation},
+  editor    = {S. Chien and M. Do and A. Fern and W. Ruml},
+  booktitle = {Proceedings of the 24th International Conference
+                on Automated Planning and Scheduling},
+  pages     = {83--91},
+  publisher = {AAAI},
+  year      = {2014},  
+  url_Paper = {www.aaai.org/ocs/index.php/ICAPS/ICAPS14/paper/view/7907/8015},
+  doi       = {10.1609/icaps.v24i1.13628},
+  abstract  = {We introduce a novel algorithm for temporal planning in 
+		\textsc{Golog} using shared resources, and describe the 
+		Bulk Freight Rail Scheduling Problem, a motivating example
+		of such a temporal domain. We use the framework of column 
+		generation to tackle complex resource constrained temporal 
+		planning problems that are beyond the scope of current planning
+		technology by combining: the global view of a linear programming
+		relaxation of the problem; the strength of search in finding 
+		action sequences; and the domain knowledge that can be encoded 
+		in a \textsc{Golog} program. We show that our approach 
+		significantly outperforms state-of-the-art temporal planning 
+		and constraint programming approaches in this domain, in 
+		addition to existing temporal \textsc{Golog} implementations.
+		We also apply our algorithm to a temporal variant of 
+		blocks-world where our decomposition speeds proof of optimality
+		significantly compared to other anytime algorithms. We discuss 
+		the potential of the underlying algorithm being applicable to
+		STRIPS planning, with further work.},
+  keywords  = {Planning, Artificial intelligence},
+}
+
+@Inproceedings{Dav-Sch-Som-Son_MSPC12,
+  author    = {Matthew Davis and 
+		Peter Schachte and 
+		Zoltan Somogyi and
+		Harald S{\o}ndergaard},
+  title     = {Towards Region Based Memory Management for {Go}},
+  booktitle = {Proceedings of the 2012 ACM Workshop on Memory Systems 
+		Performance and Correctness (MSPC 2012)},
+  pages     = {58--67},
+  publisher = {ACM Press},
+  year      = {2012},
+  doi       = {10.1145/2247684.2247695},
+  abstract  = {Region-based memory management aims to lower the cost of 
+		deallocation through bulk processing: instead of 
+		recovering the memory of each object separately, it
+		recovers the memory of a region containing many objects.
+		It relies on static analysis to determinethe set of 
+		memory regions needed by a program, the program points at
+		which each region should be created and removed, and, for
+		each memory allocation, the region that should supply the
+		memory.  The concurrent language Go has features that pose
+		interesting challenges for this analysis.  We present a 
+		novel design for region-based memory management for Go,
+		combining static analysis, to guide region creation, and
+		lightweight runtime bookkeeping, to help control 
+		reclamation.  The main advantage of our approach is that
+		it greatly limits the amount of re-work that must be done
+		after eachchange to the program source code, making our
+		approach more practical than existing RBMM systems.  Our
+		prototype implementation covers most of the sequential
+		fragment of Go, and preliminary results are encouraging.},
+  keywords  = {Memory management, Go},
+}
+
+@Inproceedings{Dav-Sch-Som-Son_MSPC13,
+  author    = {Matthew Davis and 
+		Peter Schachte and 
+		Zoltan Somogyi and
+		Harald S{\o}ndergaard},
+  title     = {A Low Overhead Method for Recovering Unused Memory 
+		Inside Regions},
+  booktitle = {Proceedings of the 2013 ACM Workshop on Memory Systems 
+		Performance and Correctness (MSPC 2013)},
+  publisher = {ACM Press},
+  year      = {2013},
+  doi       = {10.1145/2492408.2492415},
+  abstract  = {Automating memory management improves both resource safety
+		and programmer productivity.  One approach, region-based
+		memory management (RBMM), applies compile-time reasoning
+		to identify points in a program at which memory can be 
+		safely reclaimed.  The main advantage of RBMM over 
+		traditional garbage collection (GC) is the avoidance of 
+		expensive runtime analysis, which makes reclaiming memory
+		much faster.  On the other hand, GC requires no static 
+		analysis, and, operating at runtime, can have 
+		significantly more accurate information about object 
+		lifetimes.  In this paper we propose a hybrid system
+		that seeks to combine the advantages of both methods
+		while avoiding the overheads that previous hybrid systems
+		incurred.  Our system can also reclaim array segments 
+		whose elements are no longer reachable.},
+  keywords  = {Memory management, Compilation, Go},
+}
+
+@InProceedings{Far-Jef-Son_ITiCSE22,
+  author    = {Matthew Farrugia-Roberts and
+		Bryn Jeffries and
+		Harald S{\o}ndergaard},
+  title     = {Programming to Learn:
+		Logic and Computation from a Programming Perspective},
+  booktitle = {Proceedings of the 27th Annual Conference on Innovation and 
+		Technology in Computer Science Education},
+  pages     = {311--317},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY},
+  year      = {2022},
+  doi       = {10.1145/3502718.3524814},
+  abstract  = {Programming problems are commonly used as a learning and 
+		assessment activity for learning to program. We believe
+		that programming problems can be effective for broader 
+		learning goals. In our large-enrolment course, we have 
+		designed special programming problems relevant to logic, 
+		discrete mathematics, and the theory of computation, and 
+		we have used them for formative and summative assessment.
+		In this report, we reflect on our experience. We aim to 
+		leverage our students' programming backgrounds by offering
+		a code-based formalism for our mathematical syllabus.
+		We find we can translate many traditional questions into 
+		programming problems of a special kind---calling for 
+		`programs' as simple as a single expression, such as a 
+		formula or automaton represented in code. A web-based 
+		platform enables self-paced learning with rapid contextual
+		corrective feedback, and helps us scale summative 
+		assessment to the size of our cohort. We identify several 
+		barriers arising with our approach and discuss how we have
+		attempted to negate them. We highlight the potential of 
+		programming problems as a digital learning activity even 
+		beyond a logic and computation course.},
+  keywords  = {Education, Web-based learning},
+}
+
+@InProceedings{Far-Jef-Son_TFPIE21,
+  author    = {Matthew Farrugia-Roberts and
+		Bryn Jeffries and
+		Harald S{\o}ndergaard},
+  title     = {Teaching Simple Constructive Proofs with {Haskell} Programs},
+  editor    = {P. Achten and E. Machkasova},
+  booktitle = {Trends in Functional Programming in Education (TFPIE)},
+  series    = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {363},
+  pages     = {54--73},
+  year      = {2022},
+  url_Paper       = {https://arxiv.org/abs/2208.04699v1},
+  doi       = {10.4204/EPTCS.363.4},
+  abstract  = {In recent years we have explored using Haskell alongside a
+		traditional mathematical formalism in our large-enrolment 
+		university course on topics including logic and formal 
+		languages, aiming to offer our students a programming 
+		perspective on these mathematical topics. We have found it 
+		possible to offer almost all formative and summative 
+		assessment through an interactive learning platform, using 
+		Haskell as a lingua franca for digital exercises across our 
+		broad syllabus. One of the hardest exercises to convert 
+		into this format are traditional written proofs conveying 
+		constructive arguments. In this paper we reflect on the 
+		digitisation of this kind of exercise. We share many examples
+		of Haskell exercises designed to target similar skills to 
+		written proof exercises across topics in propositional logic 
+		and formal languages, discussing various aspects of the design 
+		of such exercises. We also catalogue a sample of student 
+		responses to such exercises. This discussion contributes to 
+		our broader exploration of programming problems as a flexible
+		digital medium for learning and assessment.},
+  keywords  = {Education, Web-based learning, Haskell},
+}
+
+@InProceedings{Gab-Gly-Son_LOPSTR98,
+  author    = {Tihomir Gabri{\'c} and 
+		Kevin Glynn and 
+		Harald S{\o}ndergaard},
+  title     = {Strictness Analysis as Finite-Domain Constraint Solving},
+  editor    = {P. Flener},
+  booktitle = {Logic-Based Program Synthesis and Transformation},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1559},
+  pages     = {255--270},
+  publisher = {Springer},
+  address   = {Berlin, Germany},
+  year      = {1999},
+  doi       = {10.1007/3-540-48958-4_14},
+  abstract  = {It has become popular to express dataflow analyses in logical 
+		form. In this paper we investigate a new approach to the 
+		analysis of functional programs, based on synthesis of 
+		constraint logic programs. We sketch how the language Toupie,
+		originally designed with logic program analysis as one 
+		objective, lends itself also to sophisticated strictness 
+		analysis. Strictness analysis is straightforward in the 
+		simplest case, that of analysing a first-order functional 
+		language using just two strictness values, namely divergence 
+		and ``don't know''. Mycroft's classical translation immediately
+		yields perfectly valid Boolean constraint logic programs, 
+		which, when run, provide the desired strictness information.
+		However, more sophisticated analysis requires more complex 
+		domains of strictness values. We recast Wadler's classical 
+		analysis over a $2n$-point domain as finite-domain 
+		constraint solving. This approach has several advantages.
+		First, the translation is relatively simple. We translate a 
+		recursive function definition into one or two constraint 
+		program clauses, in a manner which naturally extends Mycroft's
+		translation for the 2-point case, where the classical approach
+		translate the definition of an $n$-place function over lists 
+		into $4^n$ mutually recursive equations. Second, the resulting 
+		program produces \emph{relational} information, allowing for 
+		example to ask which combinations of properties of input will 
+		produce a given output. Third, the approach allows us to 
+		leverage from established technology, for solving finite-domain 
+		constraints, as well as for finding fixed points. Finally, the
+		use of (disjunctive) constraints can yield a higher precision 
+		in the analysis of some programs.},
+  keywords  = {Strictness analysis, Abstract interpretation, Abstract domains, Functional programming, Constraint programming},
+}
+
+@article{Gan-Hor-Nai-Son_TCAD14,
+  author    = {Graeme Gange and 
+		Benjamin Horsfall and 
+		Lee Naish and
+                Harald S{\o}ndergaard},
+  title     = {Four-Valued Reasoning and Cyclic Circuits},
+  journal   = {IEEE Transactions on Computer-Aided Design of Integrated
+                Circuits and Systems},
+  volume    = {33},
+  number    = {7},
+  pages     = {1003--1016},
+  month     = {july},
+  year      = {2014},
+  url_Paper = {http://dx.doi.org/10.1109/TCAD.2014.2304176},
+  doi       = {10.1109/TCAD.2014.2304176},
+  abstract  = {Allowing cycles in a logic circuit can be advantageous,
+		for example, by reducing the number of gates required to 
+		implement a given Boolean function, or set of functions.
+		However, a cyclic circuit may easily be ill-behaved.
+		For instance it may have some output wire oscillate 
+		instead of reaching a steady state.  Propositional 
+		three-valued logic has long been used in tests for
+		well-behaviour of cyclic circuits: a symbolic evaluation 
+		method known as ternary analysis provides one criterion 
+		for well-behaviour under certain assumptions about wire 
+		and gate delay.  We revisit ternary analysis and argue 
+		for the use of four truth values.  The fourth truth 
+		value allows for the distinction of ``undefined'' and
+		``underspecified'' behaviour.  Ability to under-specify 
+		behaviour is useful, because, in a quest for smaller 
+		circuits, an implementor can capitalize on degrees of 
+		freedom offered in the specification.  Moreover, a fourth
+		truth value is attractive because, rather than complicating
+		(ternary) circuit analysis, it introduces a pleasant 
+		symmetry, in the form of contra-duality, as well as 
+		providing a convenient framework for manipulating
+		specifications.  We use this symmetry to provide fixed 
+		point results that clarify how two-, three-, and four-valued
+		analyses are related, and to explain some observations about
+		ternary analysis.},
+  keywords  = {Fixed points, Many-valued logic, Logic circuits, Circuit synthesis},
+}
+
+@article{Gan-Ma-Nav-Sch-Son-Stu_TOPLAS21,
+  author    = {Graeme Gange and
+                Zequn Ma and
+                Jorge A. Navas and
+                Peter Schachte and
+                Harald S{\o}ndergaard and
+                Peter J. Stuckey},
+  title     = {A Fresh Look at {Zones} and {Octagons}},
+  journal   = {ACM Transactions on Programming Languages and Systems},
+  volume    = {43},
+  number    = {3},
+  pages     = {11:1--11:51},
+  year      = {2021},
+  doi       = {10.1145/3457885},
+  abstract  = {Zones and Octagons are popular abstract domains for 
+		static program analysis. They enable the automated 
+		discovery of simple numerical relations that hold 
+		between pairs of program variables. Both domains 
+		are well understood mathematically but the detailed 
+		implementation of static analyses based on these 
+		domains poses many interesting algorithmic challenges. 
+		In this paper we study the two abstract domains, their 
+		implementation and use. Utilizing improved data 
+		structures and algorithms for the manipulation of 
+		graphs that represent difference-bound constraints, 
+		we present fast implementations of both abstract domains, 
+		built around a common infrastructure. We compare the 
+		performance of these implementations against alternative 
+		approaches offering the same analysis precision. We 
+		quantify the differences in performance by measuring 
+		their speed and precision on standard benchmarks. We 
+		also assess, in the context of software verification, 
+		the extent to which the improved precision translates 
+		to better verification outcomes. Experiments demonstrate 
+		that our new implementations improve the state-of-the-art 
+		for both Zones and Octagons significantly.},
+  keywords  = {Abstract domains, Abstract interpretation, Static analysis},
+}
+
+@InProceedings{Gan-Nav-Sch-Son-Stu_APLAS19,
+  author    = {Graeme Gange and 
+		Jorge A. Navas and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Dissecting Widening: Separating Termination from Information},
+  editor    = {A. W. Lin},
+  booktitle = {Proceedings of the 17th Asian Symposium on Programming 
+		Languages and Systems},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11893},
+  pages     = {95--114},
+  publisher = {Springer},
+  year      = {2019},
+  doi       = {10.1007/978-3-030-34175-6_6},
+  abstract  = {Widening ensures or accelerates convergence of a program 
+		analysis, and sometimes contributes a guarantee of soundness 
+		that would otherwise be absent. In this paper we propose a 
+		generalised view of widening, in which widening operates on 
+		values that are not necessarily elements of the given abstract
+		domain, although they must be in a correspondence, the details
+		of which we spell out. We show that the new view generalizes 
+		the traditional view, and that at least three distinct 
+		advantages flow from the generalization. First, it gives a 
+		handle on ``compositional safety'', the problem of creating 
+		widening operators for product domains. Second, it adds a 
+		degree of flexibility, allowing us to define variants of 
+		widening, such as delayed widening, without resorting to 
+		intrusive surgery on an underlying fixpoint engine.  Third, 
+		it adds a degree of robustness, by making it difficult for
+		an analysis implementor to make certain subtle (syntactic vs 
+		semantic) category mistakes. The paper supports these claims 
+		with examples. Our proposal has been implemented in a 
+		state-of-the-art abstract interpreter, and we briefly report 
+		on the changes that the revised view necessitated.},
+  keywords  = {Fixed points, Abstract domains, Abstract interpretation, Widening},
+}
+
+@misc{Gan-Nav-Sch-Son-Stu_ArXiv14,
+  author    = {Graeme Gange and 
+		Jorge Navas and 
+		Peter Schachte and
+                Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {A Partial-Order Approach to Array Content Analysis},
+  note      = {ArXiv preprint {https://arxiv.org/abs/1408.1754}},
+  year      = {2014},
+  doi       = {10.48550/arxiv.1408.1754},
+  abstract  = {We present a parametric abstract domain for array content 
+		analysis. The method maintains invariants for contiguous 
+		regions of the array, similar to the methods of Gopan, Reps 
+		and Sagiv, and of Halbwachs and Peron. However, it introduces 
+		a novel concept of an array content graph, avoiding the need 
+		for an up-front factorial partitioning step. The resulting 
+		analysis can be used with arbitrary numeric relational 
+		abstract domains; we evaluate the domain on a range of 
+		array manipulating program fragments.},
+  keywords  = {Abstract domains, Array analysis},
+}
+
+@inproceedings{Gan-Nav-Sch-Son-Stu_NFM15,
+  author    = {Graeme Gange and 
+		Jorge Navas and 
+		Peter Schachte and
+                Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {A Tool for Intersecting Context-Free Grammars and Its
+                Applications},
+  editor    = {K. Havelund and G. Holzmann and R. Joshi},
+  booktitle = {NASA Formal Methods:
+                Proceedings of the Seventh International Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9058},
+  pages     = {422--428},
+  publisher = {Springer},
+  year      = {2015},
+  doi       = {10.1007/978-3-319-17524-9},
+  abstract  = {This paper describes a tool for intersecting context-free
+		grammars. Since this problem is undecidable the tool 
+		follows a refinement-based approach and implements a 
+		novel refinement which is complete for regularly 
+		separable grammars. We show its effectiveness for safety
+		verification of recursive multi-threaded programs.},
+  keywords  = {String analysis, Formal languages, Program verification},
+}
+
+@InProceedings{Gan-Nav-Sch-Son-Stu_SAS13,
+  author    = {Graeme Gange and 
+		Jorge A. Navas and 
+		Peter Schachte and
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Abstract Interpretation over Non-Lattice Abstract Domains},
+  editor    = {F. Logozzo and M. F{\"a}hndrich},
+  booktitle = {Static Analysis},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7935},
+  pages     = {6--24},
+  publisher = {Springer},
+  year      = {2013},
+  doi       = {10.1007/978-3-642-38856-9_3},
+  abstract  = {The classical theoretical framework for static analysis of
+		programs is abstract interpretation. Much of the power and 
+		elegance of that framework rests on the assumption that an 
+		abstract domain is a lattice. Nonetheless, and for good reason,
+		the literature on program analysis provides many examples of 
+		non-lattice domains, including non-convex numeric domains. 
+		The lack of domain structure, however, has negative 
+		consequences, both for the precision of program analysis and 
+		for the termination of standard Kleene iteration. In this paper 
+		we explore these consequences and present general remedies.},
+  keywords  = {Fixed points, Abstract domains, Lattice theory},
+}
+
+@inproceedings{Gan-Nav-Sch-Son-Stu_SAS16,
+  author    = {Graeme Gange and 
+		Jorge Navas and 
+		Peter Schachte and
+                Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Exploiting Sparsity in Difference-Bound Matrices},
+  editor    = {X. Rival},
+  booktitle = {Static Analysis:
+                Proceedings of the 23rd International Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9837},
+  pages     = {189--211},
+  publisher = {Springer},
+  year      = {2016},
+  doi       = {10.1007/978-3-662-53413-7},
+  abstract  = {Relational numeric abstract domains are very important in 
+		program analysis. Common domains, such as Zones and Octagons, 
+		are usually conceptualised with weighted digraphs and 
+		implemented using difference-bound matrices (DBMs). 
+		Unfortunately, though conceptually simple, direct 
+		implementations of graph-based domains tend to perform
+		poorly in practice, and are impractical for analyzing large 
+		code-bases. We propose new DBM algorithms that exploit 
+		sparsity and closed operands. In particular, a new 
+		representation which we call split normal form reduces graph
+		density on typical abstract states. We compare the resulting 
+		implementation with several existing DBM-based abstract 
+		domains, and show that we can substantially reduce the time
+		to perform full DBM analysis, without sacrificing precision.},
+  keywords  = {Abstract domains, Abstract interpretation, Static analysis},
+}
+
+@InProceedings{Gan-Nav-Sch-Son-Stu_SAS21,
+  author    = {Graeme Gange and 
+		Jorge A. Navas and 
+		Peter Schachte and
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Disjunctive Interval Analysis},
+  editor    = {C. Dr{\u{a}}goi and S. Mukherjee and K. Namjoshi},
+  booktitle = {Static Analysis},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12913},
+  pages     = {144--165},
+  publisher = {Springer},
+  year      = {2021},
+  doi       = {10.1007/978-3-030-88806-0_7},
+  abstract  = {We revisit disjunctive interval analysis based on the 
+		Boxes abstract domain. We propose the use of what we call 
+		range decision diagrams (RDDs) to implement Boxes, and we 
+		provide algorithms for the necessary RDD operations.  
+		RDDs tend to be more compact than the linear decision
+		diagrams (LDDs) that have traditionally been used for Boxes.
+		Representing information more directly, RDDs also allow for 
+		the implementation of more accurate abstract operations.
+		This comes at no cost in terms of analysis efficiency,
+		whether LDDs utilise dynamic variable ordering or not.
+		RDD and LDD implementations are available in the Crab analyzer,
+		and our experiments confirm that RDDs are well suited for
+		disjunctive interval analysis.},
+  keywords  = {Abstract domains, Abstract interpretation, Static analysis, Interval analysis},
+}
+
+@article{Gan-Nav-Sch-Son-Stu_TCS16,
+  author    = {Graeme Gange and 
+		Jorge Navas and 
+		Peter Schachte and
+                Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {A Complete Refinement Procedure for Regular Separability
+                of Context-Free Languages},
+  journal   = {Theoretical Computer Science},
+  volume    = {625},
+  pages     = {1--24},
+  month     = {April},
+  year      = {2016},
+  doi       = {10.1016/j.tcs.2016.01.026},
+  abstract  = {Often, when analyzing the behaviour of systems modelled 
+		as context-free languages, we wish to know if two 
+		languages overlap.  To this end, we present a class of 
+		semi-decision procedures for regular separability of 
+		context-free languages, based on counter-example guided 
+		abstraction refinement.  We propose two effective
+		instances of this approach, one that is complete but 
+		relatively expensive, and one that is inexpensive and 
+		sound, but for which we do not have a completeness proof.
+		The complete method will prove disjointness whenever the 
+		input languages are regularly separable. Both methods 
+		will terminate whenever the input languages overlap. 
+		We provide an experimental evaluation of these procedures,
+		and demonstrate their practicality on a range of 
+		verification and language-theoretic instances.},
+  keywords  = {String analysis, Formal languages, Program verification},
+}
+
+@article{Gan-Nav-Sch-Son-Stu_TOPLAS15,
+  author    = {Graeme Gange and 
+		Jorge Navas and 
+		Peter Schachte and 
+                Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Interval Analysis and Machine Arithmetic: 
+                Why Signedness Ignorance Is Bliss},
+  journal   = {ACM Transactions on Programming Languages and Systems},
+  volume    = {37},
+  number    = {1},
+  pages     = {1:1--1:35},
+  month     = {january},
+  year      = {2015},
+  doi       = {http://dx.doi.org/10.1145/2651360},
+  abstract  = {The most commonly used integer types have fixed bit-width,
+		making it possible for computations to ``wrap around'',
+		and many programs depend on this behaviour.  Yet much 
+		work to date on program analysis and verification of 
+		integer computations treats integers as having infinite 
+		precision, and most analyses that do respect fixed width
+		lose precision when overflow is possible.  We present a 
+		novel integer interval abstract domain that correctly 
+		handles wrap-around.  The analysis is signedness agnostic.
+		By treating integers as strings of bits, only considering
+		signedness for operations that treat them differently, 
+		we produce precise, correct results at a modest cost in 
+		execution time.},
+  keywords  = {Abstract domains, Abstract interpretation, Interval analysis, Machine arithmetic, C analysis, LLVM},
+}
+
+@Article{Gan-Nav-Sch-Son-Stu_TPLP13,
+  author    = {Graeme Gange and 
+		Jorge A. Navas and 
+		Peter Schachte and
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Failure Tabled Constraint Logic Programming by Interpolation},
+  journal   = {Theory and Practice of Logic Programming},
+  volume    = {13},
+  number    = {4--5},
+  pages     = {593--607},
+  year      = {2013},
+  doi       = {10.1017/S1471068413000379},
+  abstract  = {We present a new execution strategy for constraint logic
+		programs called \emph{Failure Tabled CLP}. Similarly to
+		\emph{Tabled CLP} our strategy records certain derivations
+		in order to prune further derivations. However, our method
+		only learns from \emph{failed derivations}. This allows us
+		to compute \emph{interpolants} rather than 
+		\emph{constraint projection} for generation of 
+		\emph{reuse conditions}. As a result, our technique can
+		be used where projection is too expensive or does not 
+		exist. Our experiments indicate that Failure Tabling can
+		speed up the execution of programs with many redundant 
+		failed derivations as well as achieve termination in the
+		presence of infinite executions.},
+  keywords  = {Logic programming, Interpolants},
+}
+
+@article{Gan-Nav-Sch-Son-Stu_TPLP15,
+  author    = {Graeme Gange and 
+		Jorge Navas and 
+		Peter Schachte and
+                Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Horn Clauses As an Intermediate Representation for 
+                Program Analysis and Transformation},
+  journal   = {Theory and Practice of Logic Programming},
+  volume    = {15},
+  number    = {4--5},
+  pages     = {526--542},
+  year      = {2015},
+  doi       = {http://dx.doi.org/10.1017/S1471068415000204},
+  abstract  = {Many recent analyses for conventional imperative programs 
+		begin by transforming programs into logic programs, 
+		capitalising on existing LP analyses and simple LP 
+		semantics.  We propose using logic programs as an 
+		intermediate program representation throughout the 
+		compilation process.  With restrictions ensuring 
+		determinism and single-modedness, a logic program can 
+		easily be transformed to machine language or other 
+		low-level language, while maintaining the simple semantics
+  		that makes it suitable as a language for program analysis
+		and transformation.  We present a simple LP language that
+		enforces determinism and single-modedness, and show that
+		it makes a convenient program representation for analysis
+		and transformation.},
+  keywords  = {Static analysis, Intermediate representations, Horn clauses, Logic programming},
+}
+
+@inproceedings{Gan-Nav-Sch-Son-Stu_VMCAI15,
+  author    = {Graeme Gange and 
+		Jorge Navas and 
+		Peter Schachte and
+                Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {An Abstract Domain of Uninterpreted Functions},
+  editor    = {B. Jobstmann and K. R. M. Leino},
+  booktitle = {Verification, Model Checking and Abstract Interpretation:
+                Proceedings of the 17th International Conference},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9583},
+  pages     = {85--103},
+  publisher = {Springer},
+  year      = {2016},
+  isbn      = {978-3-662-49121-8},
+  doi       = {10.1007/978-3-662-49122-5},
+  abstract  = {We revisit relational static analysis of numeric variables.
+		Such analyses face two difficulties. First, even inexpensive 
+		relational domains scale too poorly to be practical for large 
+		code-bases. Second, to remain tractable they have extremely 
+		coarse handling of non-linear relations. In this paper, we 
+		introduce the subterm domain, a weakly relational abstract 
+		domain for inferring equivalences amongst sub-expressions,
+		based on the theory of uninterpreted functions. This provides 
+		an extremely cheap approach for enriching non-relational 
+		domains with relational information, and enhances precision 
+		of both relational and non-relational domains in the presence
+		of non-linear operations. We evaluate the idea in the context 
+		of the software verification tool SeaHorn.},
+  keywords  = {Abstract domains, Abstract interpretation, Static analysis, Program verification},
+}
+
+@InProceedings{Gan-Nav-Stu-Son-Sch_TACAS13,
+  author    = {Graeme Gange and 
+		Jorge A. Navas and 
+		Peter J. Stuckey and 
+		Harald S{\o}ndergaard and 
+		Peter Schachte},
+  title     = {Unbounded Model-Checking with Interpolation for Regular
+                Language Constraints},
+  editor    = {N. Piterman and S. Smolka},
+  booktitle = {TACAS 2013: Proceedings of the 19th International
+		Conference on Tools and Algorithms for the Construction 
+		and Analysis of Systems},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7795},
+  pages     = {277--291},
+  publisher = {Springer},
+  year      = {2013},
+  doi       = {10.1007/978-3-642-36742-7_20},
+  abstract  = {We present a decision procedure for the problem of, 
+		given a set of regular expressions $R_1, \ldots, R_n$,
+		determining whether $R = R_1 \cap \cdots \cap R_n$ is 
+		empty.  Our solver, \sys{revenant}, finitely unrolls 
+		automata for $R_1, \ldots, R_n$, encoding each as a 
+		set of propositional constraints.  If a SAT solver 
+		determines satisfiability then $R$ is non-empty. Otherwise
+		our solver uses unbounded model checking techniques 
+		to extract an interpolant from the bounded proof.  
+		This interpolant serves as an overapproximation of $R$.  
+		If the solver reaches a fixed-point with the constraints
+		remaining unsatisfiable, it has proven $R$ to be empty.
+		Otherwise, it increases the unrolling depth and repeats.
+		We compare \textsc{revenant} with other state-of-the-art 
+		string solvers.  Evaluation suggests that it behaves
+		better for constraints that express the intersection of
+		sets of regular languages, a case of interest in the 
+		context of verification.},
+  keywords  = {Static analysis, Formal languages, Model checking, Interpolants, String constraints},
+}
+
+@InProceedings{Gan-Son-Stu-Sch_CADE13,
+  author    = {Graeme Gange and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey and 
+		Peter Schachte},
+  title     = {Solving Difference Constraints over Modular Arithmetic},
+  editor    = {M. P. Bonacina},
+  booktitle = {CADE 2013: Proceedings of the 24th International
+		Conference on Automated Deduction},
+  series    = {Lecture Notes in Artificial Intelligence},
+  volume    = {7898},
+  pages     = {215--230},
+  publisher = {Springer},
+  year      = {2013},
+  doi       = {10.1007/978-3-642-38574-2_15},
+  abstract  = {Difference logic is commonly used in program verification 
+		and analysis. In the context of fixed-precision integers,
+		as used in assembly languages for example, the use of 
+		classical difference logic is unsound. We study the problem
+		of deciding difference constraints in the context of modular
+		arithmetic and show that it is strongly NP-complete. We 
+		discuss the applicability of the Bellman-Ford algorithm and 
+		related shortest-distance algorithms to the context of modular
+		arithmetic. We explore two approaches, namely a complete 
+		method implemented using SMT technology and an incomplete 
+		fixpoint-based method, and the two are experimentally 
+		evaluated. The incomplete method performs considerably 
+		faster while maintaining acceptable accuracy on a range
+		of instances.},
+  keywords  = {Constraint solving, Program verification, Static analysis, Machine arithmetic, Fixed points},
+}
+
+@article{Gan-Son-Stu_TODAES14,
+  author    = {Graeme Gange and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Synthesizing Optimal Switching Lattices},
+  journal   = {ACM Transactions on Design Automation of Electronic Systems},
+  volume    = {20},
+  number    = {1},
+  pages     = {6:1--6:14},
+  month     = {november},
+  year      = {2014},
+  doi       = {10.1145/2661632},
+  abstract  = {The use of nanoscale technologies to create electronic devices 
+		has revived interest in the use of regular structures for 
+		defining complex logic functions. One such structure is the 
+		switching lattice, a two-dimensional lattice of four-terminal 
+		switches. We show how to directly construct switching lattices 
+		of polynomial size from arbitrary logic functions; we also show
+		how to synthesize minimal-sized lattices by translating the 
+		problem to the satisfiability problem for a restricted class of
+		quantified Boolean formulas. The synthesis method is an anytime
+		algorithm which uses modern SAT solving technology and 
+		dichotomic search. It improves considerably on an earlier 
+		proposal for creating switching lattices for arbitrary logic 
+		functions.},
+  keywords  = {Boolean logic, Logic circuits, Circuit synthesis},
+}
+
+@Techreport{Garcia_TR95,
+  author      = {Maria {Garc{\'\i}a de la Banda} and 
+		Kim Marriott and
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title       = {Improved Analysis of Logic Programs Using a Differential
+		Approach},
+  number      = {95/15},
+  institution = {Department of Computer Science, The University of Melbourne},
+  year        = {1995},
+  abstract    = {Abstract interpretation based program analysis has proven
+		very useful in compilation of constraint and logic programming
+		languages. Unfortunately, existing theoretical frameworks are 
+		inherently imprecise. This is because of the way the frameworks
+		handle call and return from an atom evaluation---in effect the 
+		same information may be added twice, leading to a loss of 
+		precision in many description domains. For this reason some 
+		implementations use seemingly \emph{ad hoc} tricks. Here we 
+		formalize these tricks and suggest three methods for overcoming
+		this loss of precision. Experimental and theoretical results 
+		indicate that use of these methods leads to more accurate and 
+		faster analyses for little extra implementation effort.},
+  keywords  = {Abstract interpretation, Logic programming},
+}
+
+@article{Gar-Mar-Stu-Son_JLP98,
+  author    = {Maria {Garc{\'\i}a de la Banda} and 
+		Kim Marriott and
+		Peter J. Stuckey and 
+		Harald S{\o}ndergaard},
+  title     = {Differential Methods in Logic Program Analysis},
+  journal   = {Journal of Logic Programming},
+  volume    = {35},
+  number    = {1},
+  pages     = {1--37},
+  year      = {1998},
+  doi       = {10.1016/s0743-1066(97)10002-4},
+  abstract  = {Program analysis based on abstract interpretation has proven
+		very useful in compilation of constraint and logic programming
+		languages. Unfortunately, the traditional goal-dependent 
+		framework is inherently imprecise. This is because it handles 
+		call and return in such a way that dataflow information may be 
+		re-asserted unnecessarily, leading to a loss of precision for
+		many description domains. For a few specific domains, the 
+		literature contains proposals to overcome the problem, and some
+		implementations use various unpublished tricks that sometimes 
+		avoid the precision loss. The purpose of this paper is to map 
+		the landscape of goal-dependent, goal-independent, and combined
+		approaches to generic analysis of logic programs. This includes
+		formalising existing methods and tricks in a way that is 
+		independent of specific description domains. Moreover, we 
+		suggest new methods for overcoming the loss of 
+		precision---altogether eight different semantics are 
+		considered and compared. We provide theoretical results 
+		determining the relative accuracy of the approaches. These 
+		show that two of our new semantics are uniformally more 
+		accurate than existing approaches. Experiments that we have 
+		performed (for two description domains) with implementations 
+		of the eight different approaches enable a discussion of their
+		relative runtime performances. We discuss the expected effect 
+		on other domains as well and conclude that our new methods 
+		can be trusted to yield significantly more accurate analysis 
+		for a small extra implementation effort, without compromising 
+		the efficiency of analysis.},
+  keywords  = {Abstract interpretation, Logic programming, Sharing analysis},
+}
+
+@Inproceedings{Gly-Son_ACSC99,
+  author    = {Kevin Glynn and 
+		Harald S{\o}ndergaard},
+  title     = {Immediate Fixpoints for Strictness Analysis},
+  editor    = {J. Edwards},
+  booktitle = {Proceedings of the 22nd Australasian Computer Science 
+		Conference},
+  series    = {Australian Computer Science Communications},
+  volume    = {21},
+  number    = {1},
+  year      = {1999},
+  pages     = {336--347},
+  publisher = {Springer},
+  abstract  = {This paper is concerned with the problem of finding fixpoints
+                without resorting to Kleene iteration. In many cases, a simple
+		syntactic test suffices to establish that a closed form can be 
+		found without iteration. For example, if the function $F$, 
+		whose fixpoint we want to determine, is idempotent, then its 
+		least fixpoint is simply the instantiation $F(0)$, where $0$ 
+		is the least element of the lattice. In many cases, idempotence
+		can be gleaned easily from $F$'s definition. In other cases, 
+		simple symbolic manipulation of a recursive definition may 
+		reveal shortcuts to a closed form. We explore such cases and 
+		show how the faster fixpoint calculation can have applications
+		in strictness analysis.},
+  keywords  = {Fixed points, Strictness analysis, Functional programming},
+}
+
+@Inproceedings{Gly-Stu-Sul-Son_ICFP02,
+  author    = {Kevin Glynn and 
+		Peter J. Stuckey and 
+		Martin Sulzmann and
+		Harald S{\o}ndergaard},
+  title     = {Exception Analysis for Non-Strict Languages},
+  booktitle = {Proceedings of the 2002 ACM SIGPLAN International Conference on
+        	Functional Programming},
+  pages     = {98--109},
+  publisher = {ACM Press},
+  year      = {2002},
+  doi       = {10.1145/581478.581488},
+  abstract  = {In this paper we present the first exception analysis
+		for a non-strict language. We augment a simply-typed 
+		functional language with exceptions, and show that we 
+		can define a type-based inference system to detect 
+		uncaught exceptions. We have implemented this exception
+		analysis in the GHC compiler for Haskell, which has been
+		recently extended with exceptions. We give empirical 
+		evidence that the analysis is practical.},
+  keywords  = {Exception analysis, Functional programming},
+}
+
+@Inproceedings{Gly-Stu-Sul-Son_PADO01,
+  author    = {Kevin Glynn and 
+		Peter J. Stuckey and 
+		Martin Sulzmann and
+		Harald S{\o}ndergaard},
+  title     = {Boolean Constraints for Binding-Time Analysis},
+  editor    = {O. Danvy and A. Filinsky},
+  booktitle = {Programs as Data Objects: Proceedings of the Second Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {2053},
+  pages     = {39--63},
+  publisher = {Springer},
+  year      = {2001},
+  doi       = {10.1007/3-540-44978-7_4},
+  abstract  = {To achieve acceptable accuracy, many program analyses for
+		functional programs are ``property polymorphic''.
+		That is, they can infer different input-output relations 
+		for a function at separate applications of the function, 
+		in a manner similar to type inference for a polymorphic 
+		language. We extend a property polymorphic (or ``polyvariant'')
+		method for binding-time analysis, due to Dussart, Henglein, 
+		and Mossin, so that it applies to languages with ML-style 
+		type polymorphism. The extension is non-trivial 
+		and we have implemented it for Haskell. While we follow 
+		others in specifying the analysis as a non-standard type
+		inference, we argue that it should be realised through a 
+		translation into the well-understood domain of Boolean 
+		constraints. The expressiveness offered by Boolean 
+		constraints opens the way for smooth extensions to 
+		sophisticated language features and it allows for 
+		more accurate analysis.},
+  keywords  = {Boolean logic, Binding-time analysis, Haskell},
+}
+
+@InProceedings{Gru-Mof-Son-Zob_ACE04,
+  author    = {Paul Gruba and 
+		Alistair Moffat and 
+		Harald S{\o}ndergaard and 
+		Justin Zobel},
+  title     = {What Drives Curriculum Change?},
+  editor    = {R. Lister and A. Young},
+  booktitle = {Proceedings of the Sixth Australasian Computing
+                        Education Conference (ACE2004)},
+  location  = {Dunedin, New Zealand},
+  pages     = {109--117},
+  month     = {jan},
+  year      = {2004},
+  abstract  = {While promotional literature about computer science programs 
+		may claim that curricula are determined by the needs of the 
+		students and by international best practice, the reality is 
+		often different. In this paper we reflect on the factors 
+		underlying curriculum change in computer science departments 
+		and schools, from institutional requirements and financial 
+		pressures to purely academic considerations. We have used 
+		these reflections as the basis of an investigation of 
+		curriculum management practices at institutions in Australasia,
+		via a survey instrument sent to a range of colleagues. Our 
+		findings from the survey are consistent with our own 
+		experiences, namely, that curriculum change is driven or 
+		inhibited by factors such as vocal individuals and practical
+		constraints rather than higher academic motives.},
+  keywords  = {Education, Computer science curricula},
+}
+
+@InProceedings{Gru-Son_ACSC00,
+  author    = {Paul Gruba and 
+		Harald S{\o}ndergaard},
+  title     = {Transforming Communication Skills Instruction:
+                        The Conference Approach},
+  editor    = {J. Edwards},
+  booktitle = {Proceedings of the 23rd Australasian Computer Science 
+		Conference},
+  series    = {Australian Computer Science Communications 22},
+  number    = {1},
+  pages     = {88--94},
+  year      = {2000},
+  publisher = {IEEE Computer Society},
+  location  = {Canberra, Australia},
+  doi       = {10.1109/ACSC.2000.824385},
+  abstract  = {From the social constructivist perspective of education, 
+		learning is best achieved when students face complex, real 
+		world problems in which there are no clear answers. Faced with
+		a sizable common goal, students work collaboratively towards 
+		outcomes and maintain ownership over key decisions. The role 
+		of staff is that of facilitators whose role is to challenge 
+		learners to explore multiple aspects of the problem as they go 
+		about reaching viable solutions. Such a role contrasts, for 
+		example, to an approach which sets out to lead students to a 
+		presumed correct solution that is already possessed by the
+		instructor. Based on these principles we designed and 
+		implemented a course on communication skills in Computer 
+		Science. Here, we describe our experiences using a student-run 
+		conference as a means to teach communication skills. In this 
+		approach, students were charged with the task of planning and 
+		organising a conference, including peer review, publicity, 
+		budget, sponsorship, web design, conference program, 
+		presentation schedule, speaker support, and catering.
+		We describe the principles and their implementation and 
+		reflect on the outcome.},
+  keywords  = {Education, Communication skills instruction},
+}
+
+@Article{Gru-Son_CSE01,
+  author    = {Paul Gruba and 
+		Harald S{\o}ndergaard},
+  title     = {A Constructivist Approach to Communication Skills Instruction 
+		in Computer Science},
+  journal   = {Computer Science Education},
+  volume    = {11},
+  number    = {3},
+  pages     = {203--219},
+  year      = {2001},
+  doi       = {10.1076/csed.11.3.203.3833},
+  abstract  = {From the social constructivist perspective of education, 
+		learning is best achieved when students face complex, real 
+		world problems in which there are no clear answers. Faced with
+		a sizable common goal, students work collaboratively towards 
+		outcomes and maintain ownership over key decisions. The role 
+		of staff is that of facilitators whose role is to challenge l
+		earners to explore multiple aspects of the problem as they go 
+		about reaching viable solutions. Such a role contrasts, for 
+		example, to an approach which sets out to lead students to a 
+		presumed correct solution that is already possessed by the
+		instructor. Based on these principles we designed and 
+		implemented a course on communication skills in Computer 
+		Science. Here, we describe our experiences using a student-run 
+		conference as a means to teach communication skills. In this 
+		approach, students were charged with the task of planning and 
+		organising a conference, including peer review, publicity, 
+		budget, sponsorship, web design, conference program, 
+		presentation schedule, speaker support, and catering. We 
+		describe the principles and their implementation and reflect 
+		on the outcome.},
+  keywords  = {Education, Communication skills instruction},
+}
+
+@Inproceedings{Han-Sch-Son_RV09,
+  author    = {Trevor Hansen and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard},
+  title     = {State Joining and Splitting for the Symbolic Execution 
+		of Binaries},
+  editor    = {S. Bensalem and D. A. Peled},
+  booktitle = {Runtime Verification},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {5779},
+  pages     = {76--92},
+  publisher = {Springer},
+  year      = {2009},
+  doi       = {10.1007/978-3-642-04694-0_6},
+  abstract  = {Symbolic execution can be used to explore the possible run-time 
+		states of a program. It makes use of a concept of ``state'' 
+		where a variable's value has been replaced by an expression 
+		that gives the value as a function of program input. 
+		Additionally, a state can be equipped with a summary of 
+		control-flow history: a ``path constraint'' keeps track of the
+		class of inputs that would have caused the same flow of control.
+		But even simple programs can have trillions of paths, so a 
+		path-by-path analysis is impractical. We investigate a 
+		``state joining'' approach to making symbolic execution more 
+		practical and describe the challenges of applying state joining
+		to the analysis of unmodified Linux x86 executables. The results
+		so far are mixed, with good results for some code. On other
+		examples, state joining produces cumbersome constraints that 
+		are more expensive to solve than those generated by normal 
+		symbolic execution.},
+  keywords  = {Symbolic execution},
+}
+
+@InProceedings{Hen-Sch-Son-Whi_CATS09,
+  author    = {Kevin Henshall and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Leigh Whiting},
+  title     = {Boolean Affine Approximation with Binary Decision Diagrams},
+  editor    = {R. Downey and P. Manyem},
+  booktitle = {Theory of Computing 2009},
+  series    = {Conferences in Research and Practice in Information Technology},
+  volume    = {94},
+  pages     = {121--129},
+  year      = {2009},
+  url       = {http://crpit.com/Vol94.html},
+  abstract  ={Selman and Kautz's work on knowledge compilation has
+		established how approximation (strengthening and/or
+		weakening) of a propositional knowledge-base can be used to
+		speed up query processing, at the expense of completeness.
+		In the classical approach, the knowledge-base is assumed
+		to be presented as a propositional formula in conjunctive
+		normal form (CNF), and Horn functions are used to over-
+		and under-approximate it (in the hope that many queries
+		can be answered efficiently using the approximations only).
+		However, other representations are possible, and functions
+		other than Horn can be used for approximations, as long
+		as they have deduction-computational properties similar to
+		those of the Horn functions. Zanuttini has suggested that
+		the class of affine Boolean functions would be especially
+		useful in knowledge compilation and has presented various
+		affine approximation algorithms. Since CNF is awkward
+		for presenting affine functions, Zanuttini considers both
+		a sets-of-models representation and the use of modulo 2
+		congruence equations. Here we consider the use of reduced
+		ordered binary decision diagrams (ROBDDs), a representation
+		which is more compact than the sets of models and which
+		(unlike modulo 2 congruences) can express any source
+		knowledge-base. We present an ROBDD algorithm to find
+		strongest affine upper-approximations of a Boolean function
+		and we argue its correctness.},
+  keywords  = {Boolean logic, Boolean approximation, Knowledge compilation, ROBDDs},
+}
+
+@article{Hen-Sch-Son-Whi_CJTCS10,
+  author    = {Kevin Henshall and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and
+		Leigh Whiting},
+  title     = {An Algorithm for Affine Approximation of Binary Decision 
+		Diagrams},
+  journal   = {Chicago Journal of Theoretical Computer Science},
+  volume    = {2010},
+  number    = {11},
+  publisher = {University of Chicago},
+  month     = {June},
+  year      = {2010},
+  doi       = {10.4086/cjtcs.2010.011},
+  abstract  = {This paper is concerned with the problem of Boolean approximation
+		in the following sense: given a Boolean function class and an
+		arbitrary Boolean function, what is the function's best proxy in
+		the class? Specifically, what is its strongest logical 
+		consequence (or \emph{envelope}) in the class of \emph{affine} 
+		Boolean functions. We prove various properties of affine Boolean
+		functions and their representation as ROBDDs. Using these 
+		properties, we develop an ROBDD algorithm to find the affine 
+		envelope of a Boolean function.},
+  keywords  = {Boolean logic, Boolean approximation, Knowledge compilation},
+}
+
+@InProceedings{Her-Sch-Son_CATS06,
+  author    = {Brian Herlihy and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard},
+  title     = {Boolean Equation Solving as Graph Traversal},
+  editor    = {J. Gudmundsson and B. Jay},
+  booktitle = {Theory of Computing 2006},
+  series    = {Conferences in Research and Practice in Information Technology},
+  volume    = {51},
+  pages     = {123--132},
+  year      = {2006},
+  url       = {http://crpit.com/Vol51.html},
+  abstract  = {We present a new method for finding closed forms of recursive 
+		Boolean function definitions. Traditionally, these closed forms
+		are found by iteratively approximating until a fixed point is 
+		reached. Conceptually, our new method replaces each $k$-ary 
+		function by $2^k$ Boolean variables defined by mutual recursion.
+		The introduction of an exponential number of variables is 
+		mitigated by the simplicity of their definitions and by the use
+		of a novel variant of ROBDDs to avoid repeated computation.
+		Experimental evaluation suggests that this approach is 
+		significantly faster than Kleene iteration for examples that 
+		would require many Kleene iteration steps.},
+  keywords  = {Fixed points, ROBDDs},
+}
+
+@Article{Her-Sch-Son_IJFCS07,
+  author    = {Brian Herlihy and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard},
+  title     = {Un-{Kleene} {Boolean} Equation Solving},
+  journal   = {International Journal on Foundations of Computer Science},
+  volume    = {18},
+  number    = {2},
+  pages     = {227--250},
+  year      = {2007},
+  doi       = {10.1142/S0129054107004668},
+  abstract  = {We present a new method for finding closed forms of recursive 
+		Boolean function definitions. Traditionally, these closed forms
+		are found by Kleene iteration: iterative approximation until a 
+		fixed point is reached. Conceptually, our new method replaces 
+		each $k$-ary function by $2^k$ Boolean constants defined by 
+		mutual recursion. The introduction of an exponential number of
+		constants is mitigated by the simplicity of their definitions 
+		and by the use of a novel variant of ROBDDs to avoid repeated 
+		computation. Experiments suggest that this approach is 
+		significantly faster than Kleene iteration for examples that 
+		require many Kleene iteration steps.},
+  keywords  = {Fixed points, ROBDDs},
+}
+
+@Inproceedings{Joh-Mof-Son-Stu_ACSE96,
+  author    = {Roy Johnston and 
+		Alistair Moffat and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title	    = {Low-Contact Learning in a First Year Programming Course},
+  editor    = {J. Rosenberg},
+  booktitle = {Proceedings of the First Australasian Conference on 
+		Computer Science Education},
+  pages     = {19--26},
+  publisher = {ACM Press},
+  year      = {1996},
+  location  = {Sydney, Australia},
+  doi       = {10.1145/369585.369589},
+  abstract  = {Very large class sizes for introductory programming subjects pose
+		a variety of problems, logistic and pedagogic.
+		In response to these problems, we are experimenting with 
+		low-contact streams in a class of 750 first year students.
+		Motivated and disciplined students are offered the alternative 
+		of fewer lectures and tutorials, that is, less direct contact, 
+		in return for more (compulsory) homework and increased 
+		feed-back, that is, more indirect contact.
+		With a home computer and a link to the University, such 
+		students can take the subject with more flexible timetabling.
+		We provide material to support the higher degree of self-study 
+		and tools for students to monitor their own progress.
+		This paper describes how the low-contact streams are organised 
+		and discusses the advantages and disadvantages of the approach.
+		A thorough evaluation is not possible yet, but our initial 
+		impression is that both traditional and self-paced students 
+		benefit---the traditional students are better catered for in 
+		a course that is pitched at a slightly lower and less 
+		challenging level, and the self-paced students respond to the 
+		challenge and extend themselves in a manner that might not 
+		occur in a large lecture group.},
+  keywords  = {Education},
+}
+
+@Article{Jon-Ses-Son_LASC89,
+  author    = {Neil D. Jones and 
+		Peter Sestoft and 
+		Harald S{\o}ndergaard},
+  title     = {Mix: A Self-Applicable Partial Evaluator for Experiments in
+		Compiler Generation},
+  journal   = {Lisp and Symbolic Computation},
+  volume    = {2},
+  number    = {1},
+  pages     = {9--50},
+  year      = {1989},
+  doi       = {10.1007/BF01806312},
+  abstract  = {The program transformation principle called partial 
+		evaluation has interesting applications in compilation
+		and compiler generation. Self-applicable partial evaluators
+		may be used for transforming interpreters into corresponding
+		compilers and even for the generation of compiler generators.
+		This is useful because interpreters are significantly easier
+		to write than compilers, but run much slower than compiled
+		code. A major difficulty in writing compilers (and compiler
+		generators) is the thinking in terms of distinct binding
+		times: run time and compile time (and compiler generation
+		time). The paper gives an introduction to partial
+		evaluation and describes a fully automatic though 
+		experimental partial evaluator, called mix, able to generate
+		stand-alone compilers as well as a compiler generator.
+		Mix partially evaluates programs written in Mixwell,
+		essentially a first-order subset of statically scoped pure
+		Lisp. For compiler generation purposes it is necessary
+		that the partial evaluator be self-applicable. Even though
+		the potential utility of a self-applicable partial evaluator
+		has been recognized since 1971, a 1984 version of mix
+		appears to be the first successful implementation.
+		The overall structure of mix and the basic ideas behind its
+		way of working are sketched. Finally, some results of using
+		a version of mix are reported.},
+  keywords  = {Partial evaluation, Program transformation, Compilation},
+}
+
+@Incollection{Jon-Ses-Son_RTA85,
+  author    = {Neil D. Jones and 
+		Peter Sestoft and 
+		Harald S{\o}ndergaard},
+  title     = {An Experiment in Partial Evaluation:
+			The Generation of a Compiler Generator},
+  editor    = {J.-P. Jouannaud},
+  booktitle = {Rewriting Techniques and Applications},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {202},
+  pages     = {124--140},
+  publisher = {Springer-Verlag},
+  year      = {1985},
+  note      = {Reviewed in Computing Reviews 27(7): 353, 1986},
+  doi       = {10.1007/3-540-15976-2_6},
+  keywords  = {Partial evaluation, Program transformation, Compilation},
+}
+
+@Article{Jon-Ses-Son_SIGPLANN85,
+  author    = {Neil D. Jones and 
+		Peter Sestoft and 
+		Harald S{\o}ndergaard},
+  title     = {An Experiment in Partial Evaluation: The Generation of a 
+		Compiler Generator (Extended Abstract)},
+  journal   = {SIGPLAN Notices},
+  volume    = {20},
+  number    = {8},
+  pages     = {82--87},
+  year      = {1985},
+  doi       = {10.1145/988346.988358},
+  keywords  = {Partial evaluation, Program transformation, Compilation},
+}
+
+@Incollection{Jon-Ses-Son_mix-abstract87,
+  author    = {Neil D. Jones and 
+		Peter Sestoft and 
+		Harald S{\o}ndergaard},
+  title     = {Mix: A Self-Applicable Partial Evaluator for Experiments in
+		Compiler Generation---Extended Abstract},
+  editor    = {M. Main et al.},
+  booktitle = {Mathematical Foundations of Programming Language Semantics},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {298},
+  publisher = {Springer-Verlag},
+  pages     = {386--413},
+  year      = {1987},
+  doi       = {10.1007/3-540-19020-1_21},
+  keywords  = {Partial evaluation, Program transformation, Compilation},
+}
+
+@Incollection{Jon-Son_absint87,
+  author    = {Neil D. Jones and 
+		Harald S{\o}ndergaard},
+  title     = {A Semantics-Based Framework for the Abstract Interpretation of 
+		{Prolog}},
+  editor    = {S. Abramsky and C. Hankin},
+  booktitle = {Abstract Interpretation of Declarative Languages},
+  chapter   = {6},
+  pages     = {123--142},
+  publisher = {Ellis Horwood},
+  year      = {1987},
+  keywords  = {Abstract interpretation, Logic programming, Prolog, Groundness analysis, Sharing analysis},
+}
+
+@article{Kaf-Gal-Gan-Sch-Son-Stu_TPLP18,
+  author    = {Bishoksan Kafle and 
+		John Gallagher and 
+		Graeme Gange and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {An Iterative Approach to Precondition Inference Using
+                Constrained {Horn} Clauses},
+  journal   = {Theory and Practice of Logic Programming},
+  volume    = {18},
+  pages     = {553--570},
+  year      = {2018},
+  doi       = {10.1017/S1471068418000091},
+  abstract  = {We present a method for automatic inference of conditions on 
+		the initial states of a program that guarantee that the safety 
+		assertions in the program are not violated. Constrained Horn 
+		clauses (CHCs) are used to model the program and assertions in 
+		a uniform way, and we use standard abstract interpretations to 
+		derive an over-approximation of the set of unsafe initial states.
+		The precondition then is the constraint corresponding to the 
+		complement of that set, under-approximating the set of safe 
+		initial states. This idea of complementation is not new, but 
+		previous attempts to exploit it have suffered from loss of 
+		precision. Here we develop an iterative specialisation algorithm
+		to give more precise, and in some cases optimal safety 
+		conditions. The algorithm combines existing transformations, 
+		namely constraint specialisation, partial evaluation and a 
+		trace elimination transformation. The last two of these 
+		transformations perform polyvariant specialisation, leading 
+		to disjunctive constraints which improve precision. The 
+		algorithm is implemented and tested on a benchmark suite of 
+		programs from the literature in precondition inference and 
+		software verification competitions.},
+  keywords  = {Program verification, Horn clauses, Program transformation, Partial evaluation},
+}
+
+@inproceedings{Kaf-Gan-Sch-Son-Stu_SAT17,
+  author    = {Bishoksan Kafle and 
+		Graeme Gange and 
+		Peter Schachte and
+                Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {A {Benders} Decomposition Approach to Deciding Modular
+                Linear Integer Arithmetic},
+  editor    = {S. Gaspers and T. Walsh},
+  booktitle = {Theory and Applications of Satisfiability Testing (SAT 2017)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10491},
+  pages     = {380--397},
+  publisher = {Springer International Publishing},
+  year      = {2017},
+  doi       = {10.1007/978-3-319-66263-3_24},
+  abstract  = {Verification tasks frequently require deciding systems of 
+		linear constraints over modular (machine) arithmetic. 
+		Existing approaches for reasoning over modular arithmetic 
+		use bit-vector solvers, or else approximate machine integers 
+		with mathematical integers and use arithmetic solvers. 
+		Neither is ideal; the first is sound but inefficient, and the 
+		second is efficient but unsound. We describe a linear encoding 
+		which correctly describes modular arithmetic semantics, 
+		yielding an optimistic but sound approach. Our method 
+		abstracts the problem with linear arithmetic, but 
+		progressively refines the abstraction when modular semantics 
+		is violated. This preserves soundness while exploiting the 
+		mostly integer nature of the constraint problem. We present 
+		a prototype implementation, which gives encouraging 
+		experimental results.},
+  keywords  = {Program verification, Constraint solving, Machine arithmetic},
+}
+
+@Article{Kaf-Gan-Sch-Son-Stu_SoSyM24,
+  author    = {Bishoksan Kafle and 
+		Graeme Gange and 
+		Peter Schachte and
+		Harald S{\o}ndergaard and
+		Peter J. Stuckey},
+  title     = {A Lightweight Approach to Nontermination Inference Using
+	  	{Constrained} {Horn} {Clauses}},
+  journal   = {Software and Systems Modeling},
+  volume    = {23},
+  pages     = {319--342},
+  year      = {2024},
+  doi       = {10.1007/s10270-024-01161-5},
+  abstract  = {Nontermination is an unwanted program property for some 
+	  	software systems, and a safety property for other systems.
+		In either case, automated discovery of preconditions for 
+		nontermination is of interest. We introduce \textsc{NtHorn},
+		a fast lightweight nontermination analyser, which is able to
+		deduce non-trivial sufficient conditions for nontermination.
+		Using Constrained Horn Clauses (CHCs) as a vehicle, we show 
+		how established techniques for CHC program transformation 
+		and abstract interpretation can be exploited for the purpose
+		of nontermination analysis. \textsc{NtHorn} is comparable in 
+		effectiveness to the state-of-the-art nontermination analysis
+		tools, as measured on standard competition benchmark suites 
+		(consisting of integer manipulating programs), while typically
+		solving problems faster by one order of magnitude.},
+}
+
+@InProceedings{Kaf-Gan-Sch-Son-Stu_SEFM21,
+  author    = {Bishoksan Kafle and 
+		Graeme Gange and 
+		Peter Schachte and
+		Harald S{\o}ndergaard and
+		Peter J. Stuckey},
+  title     = {Lightweight Non-Termination Inference with {CHCs}},
+  editor    = {R. Calinescu and C. P{\u{a}}s{\u{a}}reanu},
+  booktitle = {Software Engineering and Formal Methods},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13085},
+  pages     = {383--402},
+  year      = {2021},
+  doi       = {10.1007/978-3-030-92124-8_22},
+  abstract  = {Non-termination is an unwanted program property (considered a 
+		bug) for some software systems, and a safety property for 
+		other systems. In either case, automated discovery of 
+		preconditions for non-termination is of interest. We introduce
+		\textsc{NtHorn}, a fast lightweight non-termination analyser,
+		able to deduce non-trivial sufficient conditions for 
+		non-termination. Using Constrained Horn Clauses (CHCs) as a 
+		vehicle, we show how established techniques for CHC program 
+		transformation and abstract interpretation can be exploited 
+		for the purpose of non-termination analysis. \textsc{NtHorn} 
+		is comparable in power to the state-of-the-art
+		non-termination analysis tools, as measured on standard 
+		competition benchmark suites (consisting of integer 
+		manipulating programs), while typically solving problems 
+		an order of magnitude faster.},
+  keywords  = {Program verification, Program transformation, Partial evaluation, Nontermination analysis, Horn clauses},
+}
+
+@article{Kaf-Gan-Stu-Sch-Son_TPLP21,
+  author    = {Bishoksan Kafle and 
+		Graeme Gange and 
+		Peter J. Stuckey and
+		Peter Schachte and 
+		Harald S{\o}ndergaard},
+  title     = {Transformation-Enabled Precondition Inference},
+  journal   = {Theory and Practice of Logic Programming},
+  volume    = {21},
+  pages     = {700--716},
+  year      = {2021},
+  doi       = {10.1017/S1471068421000272},
+  abstract  = {Precondition inference is a non-trivial problem with 
+		important applications in program analysis and verification. 
+		We present a novel iterative method for automatically deriving 
+		preconditions for the safety and unsafety of programs. 
+		Each iteration maintains over-approximations of the set of 
+		safe and unsafe initial states; which are used to partition 
+		the program's initial states into those known to be safe, 
+		known to be unsafe and unknown. We then construct revised 
+		programs with those unknown initial states and iterate the 
+		procedure until the approximations are disjoint or some 
+		termination criteria are met. An experimental evaluation of 
+		the method on a set of software verification benchmarks shows 
+		that it can infer precise preconditions (sometimes optimal) 
+		that are not possible using previous methods.},
+  keywords  = {Program verification, Program transformation},
+}
+
+@Inproceedings{Kel-Mac-Mar-Son-Stu-Yap_CP95,
+  author    = {Andrew D. Kelly and 
+		Andrew Macdonald and 
+		Kim Marriott and
+            	Harald S{\o}ndergaard and 
+		Peter J. Stuckey and 
+		Roland H. C. Yap},
+  title     = {An Optimizing Compiler for {CLP(R)}},
+  editor    = {U. Montanari and F. Rossi},
+  booktitle = {Principles and Practice of Constraint Programming---CP'95},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {976},
+  pages     = {222--239},
+  publisher = {Springer},
+  year      = {1995},
+  doi       = {10.1007/3-540-60299-2_14},
+  abstract  = {The considerable expressive power and flexibility gained by 
+		combining constraint programming with logic programming
+		is not without cost. Implementations of constraint logic 
+		programming (CLP) languages must include expensive constraint 
+		solving algorithms tailored to specific domains, such as trees,
+		Booleans, or real numbers. The performance of many current CLP
+		compilers and interpreters does not encourage the widespread 
+		use of CLP. We outline an optimizing compiler for 
+		CLP(${\cal R}$), a CLP language which extends Prolog by 
+		allowing linear arithmetic constraints. The compiler uses 
+		sophisticated global analyses to determine the applicability of
+		different program transformations. Two important components of 
+		the compiler, the \emph{analyzer} and the \emph{optimizer}, 
+		work in continual interaction in order to apply 
+		semantics-preserving transformations to the source program.
+		A large suite of transformations are planned. Currently the 
+		compiler applies three powerful transformations, namely 
+		``solver bypass'', ``dead variable elimination'' and
+		``nofail constraint detection''. We explain these optimizations
+		and their place in the overall compiler design and show how 
+		they lead to performance improvements on a set of benchmark 
+		programs.},
+  keywords  = {Constraint programming, Logic programming, Static analysis, Program transformation, Compilation},
+}
+
+@Inproceedings{Kel-Mar-Son-Stu_ACSC97,
+  author    = {Andrew D. Kelly and 
+		Kim Marriott and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {A Generic Object-Oriented Incremental Analyser for Constraint
+             	Logic Programs},
+  editor    = {R. Kotagiri and J. Zobel},
+  booktitle = {Proceedings of the 20th Australasian Computer Science Conference},
+  series    = {Australian Computer Science Communications},
+  volume    = {19},
+  number    = {1},
+  pages     = {92--101},
+  year      = {1997},
+  abstract  = {The incorporation of global program analysis into compilers 
+		for constraint logic programming (CLP) languages has greatly
+		improved the efficiency of these new languages. We present
+		a global analyser based on abstract interpretation.  The 
+		analyser is incremental, allowing substantial program 
+		transformations by a compiler without requiring redundant
+		re-computation of analysis data. The anayser is also
+		generic in that it can perform a large number of different
+		program analyses. Furthermore, the analyser has an 
+		object-oriented design, enabling it to be easily adapted to
+		different applications and allowing it to be used with various
+		CLP languages. As an example of this generality, we outline 
+		the analyser's role in two different applications each for a
+		different CLP language: an optimizing compiler for CLP(R) 
+		programs and an application for detecting occur-check problems
+		in Prolog programs.},
+  keywords  = {Constraint programming, Logic programming, Abstract interpretation, Prolog, Static analysis, Program transformation, Compilation, Unification},
+}
+
+@Inproceedings{Kel-Mar-Son-Stu_SAS96,
+  author    = {Andrew D. Kelly and 
+		Kim Marriott and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Two Applications of an Incremental Analysis Engine for
+                (Constraint) Logic Programs (System Description)},
+  editor    = {R. Cousot and D. A. Schmidt},
+  booktitle = {Static Analysis: Proceedings of the Third International 
+		Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1145},
+  pages     = {385--386},
+  publisher = {Springer},
+  year      = {1996},
+  doi       = {10.1007/3-540-61739-6_55},
+  keywords  = {Constraint programming, Logic programming, Prolog, Static analysis, Program transformation, Compilation},
+}
+
+@Article{Kel-Mar-Son-Stu_SPE98,
+  author    = {Andrew D. Kelly and 
+		Kim Marriott and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {A Practical Object-Oriented Analysis Engine for Constraint
+                Logic Programs},
+  journal   = {Software---Practice and Experience},
+  volume    = {28},
+  number    = {2},
+  pages     = {199--224},
+  year      = {1998},
+  doi       = {10.1002/(SICI)1097-024X(199802)28:2<199::AID-SPE150>3.0.CO;2-4},
+  abstract  = {The incorporation of global program analysis into recent 
+		compilers for constraint logic programming (CLP) languages has 
+		greatly improved the efficiency of these new languages. We 
+		present a global analyzer based on abstract interpretation.
+		Unlike traditional optimizers, whose designs tend to be ad hoc,
+		the analyzer has been designed with maxiaml flexibility in
+		mind. The analyzer is incremental, allowing substantial program
+		transformations by a compiler without requiring redundant
+		re-computation of analysis data. The anayser is also
+		generic in that it can perform a large number of different
+		program analyses. Furthermore, the analyzer has an
+		object-oriented design, enabling it to be adapted to different
+		applications and allowing it to be used with various CLP 
+		languages with simple modifications. As an example of this 
+		generality, we sketch the use of the analyzer in two different
+		applications involving two different CLP languages: an 
+		optimizing compiler for CLP(${\cal R}$) programs and an 
+		application for detecting occur-check problems in Prolog 
+		programs.},
+  keywords  = {Constraint programming, Logic programming, Abstract interpretation, Prolog, Static analysis, Program transformation, Compilation, Unification},
+}
+
+@Inproceedings{Kin-Son_CAV08,
+  author    = {Andy King and 
+		Harald S{\o}ndergaard},
+  title     = {Inferring Congruence Equations with {SAT}},
+  editor    = {A. Gupta and S. Malik},
+  booktitle = {Computer Aided Verification},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {5123},
+  pages     = {281--293},
+  publisher = {Springer},
+  year      = {2008},
+  doi       = {10.1007/978-3-540-70545-1_26},
+  abstract  = {This paper proposes a new approach for deriving invariants 
+		that are systems of congruence equations where the modulo
+		is a power of 2. The technique is an amalgam of SAT-solving,
+		where a propositional formula is used to encode the semantics 
+		of a basic block, and abstraction, where the solutions to the
+		formula are systematically combined and summarised as a system
+		of congruence equations. The resulting technique is more
+		precise than existing congruence analyses since a single optimal
+		transfer function is derived for a basic block as a whole.},
+  keywords  = {Congruence analysis, Abstract interpretation, Abstract domains, Boolean logic},
+}
+
+@Inproceedings{Kin-Son_VMCAI10,
+  author    = {Andy King and 
+		Harald S{\o}ndergaard},
+  title     = {Automatic Abstraction for Congruences},
+  editor    = {G. Barthe and M. Hermenegildo},
+  booktitle = {Verification, Model Checking and Abstract Interpretation},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {5944},
+  pages     = {197--213},
+  publisher = {Springer},
+  year      = {2010},
+  doi       = {10.1007/978-3-642-11319-2_16},
+  abstract  = {One approach to verifying bit-twiddling algorithms is to derive 
+		invariants between the bits that constitute the variables of a 
+		program. Such invariants can often be described with systems
+		of congruences where in each equation 
+		$\vec{c} \cdot \vec{x} = d \mod m$, $m$ is a power of two, 
+		$\vec{c}$ is a vector of integer coefficients, and $\vec{x}$ is
+		a vector of propositional variables (bits). Because of the 
+		low-level nature of these invariants and the large number of
+		bits that are involved, it is important that the transfer 
+		functions can be derived automatically. We address this problem,
+		showing how an analysis for bit-level congruence relationships 
+		can be decoupled into two parts:
+		(1) a SAT-based abstraction (compilation) step which can be 
+		automated, and
+		(2) an interpretation step that requires no SAT-solving.
+		We exploit triangular matrix forms to derive transfer functions
+		efficiently, even in the presence of large numbers of bits. 
+		Finally we propose program transformations that improve the 
+		analysis results.},
+  keywords  = {Congruence analysis, Abstract interpretation, Abstract domains, Boolean logic},
+}
+
+@inproceedings{Lin-Mil-Son_APSEC16,
+  author    = {Yude Lin and 
+		Tim Miller and
+		Harald S{\o}ndergaard},
+  title     = {Compositional Symbolic Execution: Incremental Solving Revisited},
+  editor    = {A. Potanin and G. Murphy},
+  booktitle = {APSEC'16: Proceedings of the 23rd Asia-Pacific Software 
+		Engineering Conference},
+  pages     = {273--280},
+  location  = {Hamilton, New Zealand},
+  year      = {2016},
+  doi       = {10.1109/APSEC.2016.046},
+  abstract  = {Symbolic execution can automatically explore different execution
+  		paths in a system under test and generate tests to precisely 
+		cover them. It has two main advantages---being automatic and 
+		thorough within a theory---and has many successful applications.
+		The bottleneck of symbolic execution currently is the 
+		computation consumption for complex systems. Compositional 
+		Symbolic Execution (CSE) introduces a summarisation module to 
+		eliminate the redundancy in the exploration of repeatedly 
+		encountered code. In our previous work, we generalised the 
+		summarisation for any code fragments instead of functions. 
+		In this paper, we transplant this idea onto LLVM with many 
+		additional features, one of them being the use of incremental 
+		solving. We show that the combination of CSE and incremental 
+		solving is mutually beneficial. The obvious weakness of CSE is 
+		the lack of context during summarisation. We discuss the use
+  		of assumption-based features, available in modern constraint
+  		solvers, as a way to overcome this problem.},
+  keywords  = {Symbolic execution, LLVM},
+}
+
+@inproceedings{Lin-Mil-Son_ASWEC15,
+  author    = {Yude Lin and 
+		Tim Miller and 
+		Harald S{\o}ndergaard},
+  title     = {Compositional Symbolic Execution Using Fine-Grained Summaries},
+  booktitle = {Proceedings of the 24th Australasian Software Engineering
+                Conference (ASWEC 2015)},
+  pages     = {213--222},
+  publisher = {IEEE Computing Society},
+  year      = {2015},
+  doi       = {10.1109/ASWEC.2015.32},
+  url_Paper = {http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7365810},
+  abstract  = {Compositional symbolic execution has been proposed as a way to 
+		increase the efficiency of symbolic execution. Essentially, 
+		when a function is symbolically executed, a \emph{summary} of 
+		the path that was executed is stored. This summary records the 
+		precondition and postcondition of the path, and on subsequent 
+		calls that satisfy that precondition, the corresponding 
+		postcondition can be returned instead of executing the function
+		again. However, using functions as the unit of summarisation 
+		leaves the symbolic execution tool at the mercy of a program 
+		designer, essentially resulting in an arbitrary summarisation 
+		strategy. In this paper, we explore the use of 
+		\emph{fine-grained} summaries, in which blocks \emph{within} 
+		functions are summarised. We propose three types of 
+		summarisation and demonstrate how to generate these. At such a 
+		fine-grained level, symbolic execution of a path effectively 
+		becomes the concatenation of the summaries along that path. 
+		Using a prototype symbolic execution tool, we perform a 
+		preliminary experimental evaluation of our summary approaches, 
+		demonstrating that they can improve the speed of symbolic 
+		execution by reducing the number of calls sent to the 
+		underlying constraint solver.},
+  keywords  = {Symbolic execution},
+}
+
+@Inproceedings{Mar-Son-Dar_NACLP90,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard and 
+		Philip Dart},
+  title	    = {A Characterization of Non-floundering Logic Programs},
+  editor    = {S. Debray and M. Hermenegildo},
+  booktitle = {Logic Programming: 
+		Proceedings of the 1990 North American Conference},
+  pages	    = {661--680},
+  publisher = {MIT Press}, 
+  year	    = {1990},
+  abstract  = {SLDNF resolution provides an operational semantics which
+		(unlike many Prolog implementations of negation) is both 
+		computationally tractable and sound with respect to a 
+		declarative semantics. However, SLDNF is not complete, and 
+		it achieves soundness only by discarding certain queries to 
+		programs because they ``flounder.''
+		We present dataflow analyses that for a given normal logic 
+		program detects (1) whether naive Prolog-style handling of 
+		negation is sound and (2) whether SLDNF resolution avoids 
+		floundering. The analyses are presented in a 
+		language-independent framework of abstract interpretation based
+		on denotational definitions. To our knowledge they are more 
+		precise than any of their kind. In particular we obtain a 
+		characterization of a class of non-floundering programs larger
+		than any other that we know of.},
+  keywords  = {Floundering analysis, Logic programming, Prolog},
+}
+
+@Article{Mar-Son-Jon_TOPLAS94,
+  author    = {Kim Marriott and
+		Harald S{\o}ndergaard and 
+		Neil D. Jones},
+  title     = {Denotational Abstract Interpretation of Logic Programs},
+  journal   = {ACM Transactions on Programming Languages and Systems},
+  volume    = {16},
+  number    = {3},
+  pages     = {607--648},
+  year      = {1994},
+  doi       = {10.1145/177492.177650},
+  abstract  = {Logic programming languages are based on a principle of 
+		separation of ``logic'' and ``control.'' This means that they
+		can be given simple model-theoretic semantics without regard to
+		any particular execution mechanism (or proof procedure, viewing
+		execution as theorem proving). While the separation is desirable
+		from a semantical point of view, it does, however, make sound, 
+		efficient implementation of logic programming languages 
+		difficult. The lack of ``control information'' in programs 
+		calls for complex dataflow analysis techniques to guide 
+		execution. Since dataflow analysis furthermore finds extensive 
+		use in error-finding and transformation tools, there is a need 
+		for a simple and powerful theory of dataflow analysis of logic 
+		programs. The present paper offers such a theory, based on 
+		F. Nielson's extension of P. and R. Cousot's abstract 
+		interpretation. We present a denotational definition of the 
+		semantics of definite logic programs. This definition is of 
+		interest in its own right because of its compactness.
+		Stepwise we develop the definition into a generic dataflow 
+		analysis which encompasses a large class of dataflow analyses
+		based on the SLD execution model. We exemplify one instance of
+		the definition by developing a provably correct groundness 
+		analysis to predict how variables may be bound to ground terms 
+		during execution. We also discuss implementation issues and 
+		related work.},
+  keywords  = {Abstract interpretation, Abstract domains, Groundness analysis, Logic programming},
+}
+
+@Inproceedings{Mar-Son-Stu-Yap_ACSC94,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey and 
+		Roland Yap},
+  title	    = {Optimizing Compilation for {CLP(R)}},
+  editor    = {G. Gupta},
+  booktitle = {Proceedings of the 17th Australian Computer Science Conference},
+  series    = {Australian Computer Science Communications},
+  volume    = {16},
+  number    = {1},
+  pages     = {551--560},
+  year	    = {1994},
+  abstract  = {Constraint Logic Programming (CLP) is a recent innovation in
+		programming language design. CLP languages extend logic
+		programming by allowing constraints from different domains
+		such as real numbers or Boolean functions. This gives
+		considerable expressive power and flexibility and CLP
+		programs have proven to be a high-level programming
+		paradigm for applications based on interactive mathematical
+		modelling. These advantages, however, are not without cost.
+		Implementations of CLP languages must include expensive
+		constraint solving algorithms tailored to the specific
+		domains. Indeed, performance of the current generation of
+		CLP compilers and interpreters is one of the main obstacles
+		to the widespread use of CLP. Here we outline the design
+		of a highly optimizing compiler for CLP($\Re$), a CLP
+		language which extends Prolog by allowing linear arithmetic
+		constraints. This compiler is intended to overcome the
+		efficiency problems of the current implementation
+		technology. The main innovation in the compiler is a
+		comprehensive suite of program optimizations and associated
+		global analyses which determine applicability of each
+		optimization. We describe these optimizations and report
+		very promising results from preliminary experiments.},
+  keywords  = {Constraint programming, Logic programming, Compilation, Static analysis},
+}
+		
+@Inproceedings{Mar-Son_GULP90,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title	    = {Abstract Interpretation of Logic Programs:
+			The Denotational Approach},
+  editor    = {A. Bossi},
+  booktitle = {Proceedings of the Fifth Italian Conference on Logic Programming},
+  pages     = {399--425},
+  organization = {Gruppo Ricercatori ed Utenti di Logic Programming,
+			Padova, Italy}, 
+  year	    = {1990},
+  note	    = {Invited paper},
+  abstract  = {Logic programming languages are based on a principle of 
+		separation of ``logic'' and ``control.'' This means that 
+		they can be given simple model-theoretic semantics
+		without regard to any particular execution mechanism.
+		While this is desirable from a semantical point of view, 
+		it does make sound, efficient implementation of logic 
+		programming languages difficult. The lack of ``control 
+		information'' in programs calls for complex dataflow
+		analyses to guide execution. Since dataflow analysis also 
+		finds extensive use in error-finding and transformation 
+		tools, there is a need for a simple and powerful theory
+		of dataflow analysis of logic programs.
+		We offer such a theory, inspired by F. Nielson's extension
+		of P. and R. Cousot's \emph{abstract interpretation}.
+		We then present a denotational definition of the semantics 
+ 		of definite logic programs. This definition is of interest 
+		in its own right because of its novel application of 
+		\emph{parametric substitutions} which makes it very compact
+		and yet transparent. Stepwise we develop the definition 
+		into a generic dataflow analysis which encompasses a large 
+		class of dataflow analyses based on the SLD execution model.
+		We exemplify one instance of the definition by developing a 
+		provably correct groundness analysis to predict how 
+		variables may be bound to ground terms during execution.
+		We also discuss related work and other applications.},
+  keywords  = {Abstract interpretation, Abstract domains, Groundness analysis, Logic programming},
+}
+
+@Inproceedings{Mar-Son_ICSC88,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title     = {Prolog Program Transformation by Introduction of 
+		Difference Lists},
+  booktitle = {Proceedings of the International Computer Science 
+		Conference '88},
+  pages     = {206--213},
+  publisher = {IEEE Computer Society},
+  location  = {Hong Kong},
+  year      = {1988},
+  keywords  = {Program transformation, Logic programming, Prolog},
+}
+
+@Inproceedings{Mar-Son_ICSLP88,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title	    = {Bottom-Up Abstract Interpretation of Logic Programs},
+  editor    = {R. A. Kowalski and K. A. Bowen},
+  booktitle = {Logic Programming: Proceedings of the Fifth International 
+		Conference and Symposium},
+  pages	    = {733--748},
+  publisher = {MIT Press}, 
+  year	    = {1988},
+  abstract  = {Abstract interpretation is useful in the design and 
+		verification of dataflow analyses. Given a programming
+		language and a fixpoint characterization of its semantics,
+		abstract interpretation enables the explicit formulation
+		of the relation between a dataflow analysis and the 
+		semantics. A key notion in this is that of a ``collecting''
+		semantics---an extension of the semantics that attaches
+		information about run-time behaviour to program points.
+	 	Different collecting semantics lead to different types of
+		dataflow analysis. We present a novel collecting semantics 
+		for normal logic programs. It is based on a Fitting-style 
+		bottom-up semantics and forms a firm semantic base for
+		bottom-up dataflow analyses. One such analysis, using
+		descriptions similar to Sato and Tamaki's depth k
+		abstractions, is detailed and shown to be sound with 
+		respect to the collecting semantics. Its use in program
+		specialization and termination analysis is demonstrated.},
+  keywords  = {Abstract interpretation, Logic programming, Many-valued logic, Depth k analysis, Program transformation, Semantics, Termination analysis},
+}
+
+@Inproceedings{Mar-Son_IFIP89,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title     = {Semantics-Based Dataflow Analysis of Logic Programs},
+  editor    = {G. X. Ritter},
+  booktitle = {Information Processing 89},
+  pages     = {601--606},
+  publisher = {North-Holland},
+  year      = {1989},
+  abstract  = {The increased acceptance of Prolog has motivated widespread 
+	 	interest in the semantics-based dataflow analysis of logic 
+		programs and a number of different approaches have been 
+		suggested. However, the relationships between these 
+		approaches are not clear. The present paper provides a 
+		unifying introduction to the approaches by giving novel 
+		denotational semantic definitions which capture their 
+		essence. In addition, the wide range of analysis tools 
+		supported by semantics-based dataflow analysis are discussed.},
+  keywords  = {Logic programming, Prolog, Static analysis, Semantics},
+}
+
+@Inproceedings{Mar-Son_ILPSworkshop93,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title	    = {On Propagation-Based Analysis of Logic Programs},
+  editor    = {S. Michaylov and W. Winsborough},
+  booktitle = {Proceedings of the ILPS 93 Workshop on Global Compilation,
+			Vancouver, Canada},
+  pages     = {47--65},
+  year	    = {1993},
+  abstract  = {Notions such as ``reexecution'' and ``propagation'' have recently
+		attracted attention in dataflow analysis of logic programs. 
+		Both techniques promise more accurate dataflow analysis without 
+		requiring more complex description domains. Propagation, 
+		however, has never been given a formal definition. It has 
+		therefore been difficult to discuss properties such as 
+		correctness, precision, and termination of propagation. 
+		We suggest a definition of propagation. Comparing 
+		propagation-based analysis with the more conventional
+		approach based on abstract interpretation, we find that 
+		propagation involves a certain inherent loss of precision 
+		when dataflow analyses are based on description domains
+		which are not ``downwards closed'' (including mode analysis).
+		In the archetypical downwards closed case, groundness 
+		analysis, we contrast approaches using Boolean functions as
+		descriptions with those using propagation or reexecution.},
+  keywords  = {Abstract interpretation, Boolean logic, Logic programming, Mode analysis, Groundness analysis},
+}
+
+@Article{Mar-Son_JLP92,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title	    = {Bottom-Up Dataflow Analysis of Normal Logic Programs},
+  journal   = {Journal of Logic Programming},
+  volume    = {13},
+  number    = {2 \& 3},
+  pages	    = {181--204}, 
+  year	    = {1992},
+  doi       = {10.1016/0743-1066(92)90031-W},
+  abstract  = {A theory of semantics-based dataflow analysis using a notion of
+		``insertion'' is presented. This notion relaxes the Galois 
+		connections used in P. and R. Cousot's theory of abstract 
+		interpretation. The aim is to obtain a firm basis for the 
+		development of dataflow analyses of normal logic programs.
+		A dataflow analysis is viewed as a non-standard semantics that
+		approximates the standard semantics by manipulating descriptions
+		of data objects rather than the objects themselves. A Kleene 
+		logic-based semantics for normal logic programs is defined, 
+		similar to Fitting's $\Phi_P$ semantics. This provides the 
+		needed semantic base for ``bottom-up'' dataflow analyses. 
+		Such analyses give information about the success and failure 
+		sets of a program. A major application of bottom-up analysis 
+		is therefore type inference. We detail a dataflow analysis 
+		using descriptions similar to Sato and Tamaki's depth $k$ 
+		abstractions and another using Marriott, Naish and Lassez's
+		``singleton'' abstractions. We show that both are sound with 
+		respect to our semantics and outline various uses of the 
+		analyses. Finally we justify our choice of semantics by showing
+		that it is the most abstract of a number of possible semantics.
+		This means that every analysis based on our semantics is 
+		correct with respect to these other semantics, including 
+		Kunen's semantics, SLDNF resolution, and the common (sound) 
+		Prolog semantics.},
+  keywords  = {Abstract interpretation, Logic programming, Many-valued logic, Depth k analysis, Semantics},
+}
+
+@Article{Mar-Son_LOPLAS93,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title	    = {Precise and Efficient Groundness Analysis for Logic Programs},
+  journal   = {ACM Letters on Programming Languages and Systems},
+  volume    = {2},
+  number    = {1--4},
+  pages	    = {181--196},
+  year	    = {1993},
+  doi       = {10.1145/176454.176519},
+  abstract  = {We show how precise groundness information can be extracted from
+		logic programs. The idea is to use abstract interpretation with
+		Boolean functions as ``approximations'' to groundness 
+		dependencies between variables. This idea is not new, and 
+		different classes of Boolean functions have been used. We argue,
+		however, that one class, the \emph{positive} functions, is more 
+		suitable than others. Positive Boolean functions have a certain
+		property which we (inspired by A. Langen) call ``condensation.''
+		This property allows for rapid computation of groundness 
+		information.},
+  keywords  = {Abstract interpretation, Abstract domains, Logic programming, Boolean logic, Groundness analysis},
+}
+
+@Inproceedings{Mar-Son_NACLP90,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title	    = {Analysis of Constraint Logic Programs},
+  editor    = {S. Debray and M. Hermenegildo},
+  booktitle = {Logic Programming: 
+		Proceedings of the 1990 North American Conference},
+  pages	    = {531--547},
+  publisher = {MIT Press}, 
+  year	    = {1990},
+  abstract  = {Increasingly, compilers for logic programs are making use 
+		of information from dataflow analyses to aid in the generation
+		of efficient target code. However, generating efficient target
+		code from constraint logic programs is even more difficult than
+		from logic programs. Thus we feel that good compilation of
+		constraint logic programs will require sophisticated analysis 
+		of the source code. Here we present a simple framework for
+		the abstract interpretation of constraint logic programs
+		which is intended to serve as the basis for developing such 
+		analyses. We show the framework's practical usefulness by 
+		sketching two dataflow analyses that are based on it
+		and indicating how they can be used to improve the code 
+		generated by a compiler.},
+  keywords  = {Constraint programming, Logic programming, Abstract interpretation, Semantics, Compilation},
+}
+
+@Article{Mar-Son_NGC93,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title	    = {Difference-List Transformation for {Prolog}},
+  journal   = {New Generation Computing},
+  volume    = {11},
+  number    = {2},
+  pages     = {125--157}, 
+  year	    = {1993},
+  doi       = {10.1007/BF03037156},
+  abstract  = {Difference-lists are terms that represent lists.
+		The use of difference-lists can speed up most list-processing 
+		programs considerably. Prolog programmers routinely use 
+		``difference-list versions'' of programs, but very little 
+		investigation has taken place into difference-list 
+		transformation. Thus, to most programmers it is either 
+		unknown that the use of difference-lists is far from safe in 
+		all contexts, or else this fact is known but attributed to 
+		Prolog's infamous ``occur check problem.'' In this paper we 
+		study the transformation of list-processing programs into 
+		programs that use difference-lists. In particular we are 
+		concerned with finding circumstances under which the 
+		transformation is safe. We show that dataflow analysis can 
+		be used to determine whether the transformation is applicable 
+		to a given program, thereby allowing for automatic 
+		transformation. We prove that our transformation preserves 
+		strong operational equivalence.},
+  keywords  = {Program transformation, Static analysis, Logic programming, Prolog},
+}
+
+@Article{Mar-Son_occur89,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title     = {On {Prolog} and the Occur Check Problem},
+  journal   = {SIGPLAN Notices},
+  volume    = {24},
+  number    = {5},
+  pages     = {76--82},
+  year      = {1989},
+  doi       = {10.1145/66068.66075},
+  abstract  = {It is well known that omission of the occur check in 
+		unification leads to unsound Prolog systems. Nevertheless,
+	 	most Prolog systems omit the occur check because this
+		makes unification much faster and unsoundness allegedly
+		seldom manifests itself. We revisit the occur check
+		problem and point to two aspects that have previously 
+		received no attention. Firstly, ``unification without the
+		occur check'' is ambiguous, and in practice, Prolog systems
+		vary markedly in their reaction to programs having occur
+		check problems. Secondly, even very simple program
+		transformations are unsafe for pure Prolog when the occur
+		check is omitted. We conclude that the occur check problem
+		is important, and in particular, that the current effort to
+		standardize Prolog should address it.},
+  keywords  = {Logic programming, Prolog, Unification},
+}
+
+@Techreport{Mar-Son_success_patterns88,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title     = {On Describing Success Patterns of Logic Programs},
+  number    = {88/12},
+  institution = {Department of Computer Science, The University of Melbourne},
+  year      = {1988},
+  abstract  = {Sato and Tamaki's depth $k$ abstractions are reviewed, and their
+		use as (finite) descriptions of (infinite) sets of expressions
+		(terms and atomic formulas) is discussed. This leads to an
+		investigation of other classes of expressions. A certain
+		property of a class is identified as being sufficient for the
+		existence of a Galois insertion from the class to the set of
+		all expressions, and thus for abstract interpretation to be
+		applicable. Sato and Tamaki's class does not have the property,
+		but it is shown how it can be extended to a class having the
+		property while still remaining finite.},
+  keywords  = {Abstract interpretation, Abstract domains, Depth k analysis},
+}
+
+@Unpublished{Mar-Son_tutorial89,
+  author    = {Kim Marriott and 
+		Harald S{\o}ndergaard},
+  title     = {Notes for a Tutorial on Abstract Interpretation of Logic 
+		Programs},
+  year      = {1989},
+  note      = {Tutorial Notes for the 1989 North American Conference on 
+		Logic Programming. Assocation for Logic Programming, 1989},
+  keywords  = {Abstract interpretation, Abstract domains, Logic programming, Unification, Semantics, Groundness analysis},
+}
+
+@Inproceedings{Men-Son-Ven_AAEE17,
+  author    = {Antonette Mendoza and
+		Harald S{\o}ndergaard and 
+		Anne Venables},
+  title     = {Making Sense of Learning Management System's Quiz Analytics
+        	in Understanding Students' Learning Difficulties},
+  booktitle = {Proceedings of the 28th Annual Conference of the
+        	Australasian Association for Engineering Education (AAEE2017)},
+  pages     = {112--119},
+  location  = {Manly, New South Wales},
+  publisher = {Australasian Association for Engineering Education},
+  year      = {2017},
+  keywords  = {Education},
+}
+
+@InProceedings{Mof-Hug-Son-Gru_ACE05,
+  author    = {Alistair Moffat and 
+		Baden Hughes and 
+		Harald S{\o}ndergaard and 
+		Paul Gruba},
+  title     = {Making Connections: First Year Transition for Computer
+		Science and Software Engineering Students},
+  editor    = {A. Young and D. Tolhurst},
+  booktitle = {Proceedings of the Seventh Australasian Computing Education 
+		Conference (ACE2005)},
+  series    = {Conferences in Research and Practice in Information Technology},
+  volume    = {42},
+  pages     = {229--238},
+  year      = {2005},
+  abstract  = {During the last decade, an increasing emphasis has been placed 
+		on the need for carefully planned transition programs to help 
+		first-year students integrate into university. In this paper 
+		we critically examine our experiences in designing and running
+		successive transition programs for Computer Science and 
+		Software Engineering students. Over the last three years we 
+		have trialled several models. At present, our program requires 
+		all entering students to be enrolled in a transition subject,
+		``Making Connections'', which runs for half a semester. The
+		subject, led by designated academic staff, serves as a forum 
+		for students to learn about each other, the department and the 
+		university. The program includes a computer-based language and
+		study skills assessment component, including self-assessment 
+		tasks. Students can extend the subject by taking academic 
+		skills workshops run by the university's student support 
+		services. We have found compulsion to be a useful facilitator 
+		of student engagement, and the addition of an objective 
+		assessment task has been beneficial.},
+  keywords  = {Education, Student transition programs},
+}
+
+@InProceedings{Nai-Son-Hor_CATS12,
+  author    = {Lee Naish and 
+		Harald S{\o}ndergaard and 
+		Benjamin Horsfall},
+  title     = {Logic Programming: From Underspecification to Undefinedness},
+  editor    = {J. Mestre},
+  booktitle = {Theory of Computing 2012},
+  series    = {Conferences in Research and Practice in Information Technology},
+  volume    = {128},
+  pages     = {49--58},
+  year      = {2012},
+  url       = {http://crpit.com/Vol128.html},
+  abstract  = {The semantics of logic programs was originally described in 
+		terms of two-valued logic. Soon, however, it was realised that 
+		three-valued logic had some natural advantages, as it provides 
+		distinct values not only for truth and falsehood, but also for
+		"undefined". The three-valued semantics proposed by Fitting and
+		by Kunen are closely related to what is computed by a logic 
+		program, the third truth value being associated with 
+		non-termination. A different three-valued semantics, proposed 
+		by Naish, shared much with those of Fitting and Kunen but 
+		incorporated allowances for programmer intent, the third truth 
+		value being associated with underspecification. Naish used an 
+		(apparently) novel ``arrow'' operator to relate the intended 
+		meaning of left and right sides of predicate definitions. In 
+		this paper we suggest that the additional truth values of
+		Fitting/Kunen and Naish are best viewed as duals. We use 
+		Fitting's later four-valued approach to unify the two 
+		three-valued approaches. The additional truth value has very 
+		little affect on the Fitting three-valued semantics, though it
+		can be useful when finding approximations to this semantics for
+		program analysis. For the Naish semantics, the extra truth 
+		value allows intended interpretations to be more expressive, 
+		allowing us to verify and debug a larger class of programs. 
+		We also explain that the "arrow" operator of Naish (and our 
+		four-valued extension) is essentially the information ordering.
+		This sheds new light on the relationships between 
+		specifications and programs, and successive executions states 
+		of a program.},
+  keywords  = {Logic programming, Semantics, Many-valued logic},
+}
+
+@article{Nai-Son_TPLP14,
+  author    = {Lee Naish and 
+		Harald S{\o}ndergaard},
+  title     = {Truth versus Information in Logic Programming},
+  journal   = {Theory and Practice of Logic Programming},
+  volume    = {14},
+  number    = {6},
+  pages     = {803--840},
+  month     = {november},
+  year      = {2014},
+  url_Paper = {http://journals.cambridge.org/repo_A89XyMV9},
+  doi       = {10.1017/S1471068413000069},
+  abstract  = {The semantics of logic programs was originally described in 
+		terms of two-valued logic. Soon, however, it was realised that
+		three-valued logic had some natural advantages, as it provides 
+		distinct values not only for truth and falsehood, but also for 
+		``undefined''. The three-valued semantics proposed by Fitting 
+		and by Kunen are closely related to what is computed by a 
+		logic program, the third truth value being associated with 
+		non-termination. A different three-valued semantics, proposed 
+		by Naish, shared much with those of Fitting and Kunen but 
+		incorporated allowances for programmer intent, the third truth 
+		value being associated with underspecification. Naish used an 
+		(apparently) novel ``arrow'' operator to relate the intended
+		meaning of left and right sides of predicate definitions. In 
+		this paper we suggest that the additional truth values of 
+		Fitting/Kunen and Naish are best viewed as duals. We use 
+		Belnap's four-valued logic, also used elsewhere by Fitting, 
+		to unify the two three-valued approaches. The truth values are 
+		arranged in a bilattice which supports the classical ordering 
+		on truth values as well as the ``information ordering''. We 
+		note that the ``arrow'' operator of Naish (and our four-valued
+		extension) is essentially the information ordering, whereas the
+		classical arrow denotes the truth ordering. This allows us to 
+		shed new light on many aspects of logic programming, including 
+		program analysis, type and mode systems, declarative debugging 
+		and the relationships between specifications and programs, and 
+		successive executions states of a program.},
+  keywords  = {Logic programming, Semantics, Many-valued logic},
+}
+
+@InProceedings{Nav-Sch-Son-Stu_APLAS12,
+  author    = {Jorge A. Navas and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and
+		Peter J. Stuckey},
+  title     = {Signedness-Agnostic Program Analysis: 
+		Precise Integer Bounds for Low-Level Code},
+  editor    = {R. Jhala and A. Igarashi},
+  booktitle = {APLAS 2012: Proceedings of the 10th Asian Symposium 
+        	on Programming Languages and Systems},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7705},
+  pages     = {115--130},
+  publisher = {Springer},
+  year      = {2012},
+  doi       = {10.1007/978-3-642-35182-2_9},
+  abstract  = {Many compilers target common back-ends, thereby 
+		avoiding the need to implement the same analyses 
+		for many different source languages. This has led
+		to interest in static analysis of LLVM code. 
+		In LLVM (and similar languages) most signedness 
+		information associated with variables has been 
+		compiled away. Current analyses of LLVM code tend
+		to assume that either all values are signed or all
+		are unsigned (except where the code specifies the 
+		signedness). We show how program analysis can 
+		simultaneously consider each bit-string to be both 
+		signed and unsigned, thus improving precision, 
+		and we implement the idea for the specific case of 
+		integer bounds analysis. Experimental evaluation
+		shows that this provides higher precision at little
+		extra cost. Our approach turns out to be beneficial
+		even when all signedness information is available,
+		such as when analysing C or Java code.},
+  keywords  = {Abstract domains, Abstract interpretation, Interval analysis, Machine arithmetic, C analysis, LLVM},
+}
+
+@Article{Sch-Son-Whi-Hen_AIJ10,
+  author    = {Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Leigh Whiting and
+		Kevin Henshall},
+  title     = {Information Loss in Knowledge Compilation: 
+		A Comparison of {Boolean} Envelopes},
+  journal   = {Artificial Intelligence},
+  volume    = {174},
+  number    = {9--10},
+  pages     = {585--596},
+  year      = {2010},
+  doi       = {10.1016/j.artint.2010.03.003},
+  abstract  = {Since Selman and Kautz's seminal work on the use of Horn 
+		approximation to speed up the querying of knowledge bases, 
+		there has been great interest in Boolean approximation for 
+		AI applications. There are several Boolean classes with 
+		desirable computational properties similar to those of the
+		Horn class. The class of affine Boolean functions, for example,
+		has been proposed as an interesting alternative to Horn for 
+		knowledge compilation. To investigate the trade-offs between
+		precision and efficiency in knowledge compilation, we compare, 
+		analytically and empirically, four well-known Boolean classes,
+		and their combinations, for ability to preserve information.
+		We note that traditional evaluation which explores unit-clause
+		consequences of random hard 3-CNF formulas does not tell the 
+		full story, and we complement that evaluation with experiments 
+		based on a variety of assumptions about queries and the 
+		underlying knowledge base.},
+  keywords  = {Boolean logic, Boolean approximation, Knowledge compilation, Artificial intelligence},
+}
+
+@Inproceedings{Sch-Son_SARA07,
+  author    = {Peter Schachte and 
+		Harald S{\o}ndergaard},
+  title     = {Boolean Approximation Revisited},
+  editor    = {I. Miguel and W. Ruml},
+  booktitle = {Abstraction, Reformulation and Approximation:
+         	Proceedings of {SARA} 2007},
+  series    = {Lecture Notes in Artificial Intelligence},
+  volume    = {4612},
+  pages     = {329--343},
+  publisher = {Springer},
+  year      = {2007},
+  doi       = {10.1007/978-3-540-73580-9_26},
+  abstract  = {Most work to date on Boolean approximation assumes that
+		Boolean functions are represented by formulas in
+		conjunctive normal form. That assumption is appropriate 
+		for the classical applications of Boolean approximation 
+		but potentially limits wider use. We revisit, in a 
+		lattice-theoretic setting, so-called envelopes and cores
+		in propositional logic, identifying them with upper and
+		lower closure operators, respectively. This leads to 
+		recursive representation-independent characterisations
+		of Boolean approximation for a large class of classes.
+		We show that Boolean development can be applied in a 
+		representation-independent setting to develop approximation
+		algorithms for a broad range of Boolean classes, including
+		Horn and Krom functions.},
+  keywords  = {Boolean logic, Boolean approximation, Lattice theory},
+}
+
+@Inproceedings{Sch-Son_VMCAI06,
+  author    = {Peter Schachte and 
+		Harald S{\o}ndergaard},
+  title     = {Closure Operators for {ROBDDs}},
+  editor    = {E. A. Emerson and K. S. Namjoshi},
+  booktitle = {Proceedings of the Seventh International Conference on
+        	Verification, Model Checking and Abstract Interpretation},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {3855},
+  pages     = {1--16},
+  publisher = {Springer},
+  year      = {2006},
+  doi       = {10.1007/11609773_1},
+  abstract  = {Program analysis commonly makes use of Boolean functions to 
+		express information about run-time states. Many important 
+		classes of Boolean functions used this way, such as the
+		monotone functions and the Boolean Horn functions, have
+		simple semantic characterisations. They also have well-known 
+		syntactic characterisations in terms of Boolean formulae, say,
+		in conjunctive normal form. Here we are concerned with 
+		characterisations using binary decision diagrams. Over the 
+		last decade, ROBDDs have become popular as representations of 
+		Boolean functions, mainly for their algorithmic properties.
+		Assuming ROBDDs as representation, we address the following 
+		problems: Given a function $\psi$ and a class of functions 
+		$\class$, how to find the strongest $\varphi \in \class$ 
+		entailed by $\psi$ (when such a $\varphi$ is known to exist)?
+		How to find the weakest $\varphi \in \class$ that entails 
+		$\psi$? How to determine that a function $\psi$ belongs to a 
+		class $\class$? Answers are important, not only for several 
+		program analyses, but for other areas of computer science, 
+		where Boolean approximation is used. We give, for many commonly
+		used classes $\class$ of Boolean functions, algorithms to 
+		approximate functions represented as ROBDDs, in the sense 
+		described above. The algorithms implement upper closure 
+		operators, familiar from abstract interpretation.  They 
+		immediately lead to algorithms for deciding class membership.},
+  keywords  = {Boolean logic, Boolean approximation, ROBDDs},
+}
+
+@inproceedings{Ses-Son_PEPM24,
+  author    = {Peter Sestoft and 
+		Harald S{\o}ndergaard},
+  title     = {The Genesis of {Mix}: Early Days of Self-Applicable 
+		Partial Evaluation (Invited Contribution)},
+  editor    = {G. Keller and M. Wang},
+  booktitle = {PEPM 2024: Proceedings of the 2024 ACM SIGPLAN International
+        	Workshop on Partial Evaluation and Program Manipulation},
+  pages     = {1--13},
+  year      = {2024},
+  doi       = {10.1145/3635800.3637445},
+  abstract  = {Forty years ago development started on Mix, a partial evaluator
+		designed specifically for the purpose of self-application.
+		The effort, led by Neil D. Jones at the University of 
+		Copenhagen, eventually demonstrated that non-trivial compilers
+		could be generated automatically by applying a partial 
+		evaluator to itself. The possibility, in theory, of such 
+		self-application had been known for more than a decade, but
+		remained unrealized by the start of 1984. We describe the 
+		genesis of Mix, including the research environment, the 
+		challenges, and the main insights that led to success. We 
+		emphasize the critical role played by program annotation as a
+		pre-processing step, a process that became automated in the 
+		form of binding-time analysis.},
+  keywords  = {Partial evaluation, Binding-time analysis, Compilation, History},
+}
+
+@Proceedings{Ses-Son_PEPM94,
+  editor    = {Peter Sestoft and 
+		Harald S{\o}ndergaard},
+  title	    = {PEPM '94: Proceedings of the ACM SIGPLAN Workshop on Partial 
+		Evaluation and Semantics-Based Program Manipulation},
+  location  = {Orlando, Florida},
+  year      = {1994},
+  doi       = {10.1007/BF01019002},
+  note	    = {Technical Report 94/9, Department of Computer Science, 
+		The University of Melbourne},
+  keywords  = {Partial evaluation, Program transformation, Static analysis},
+}
+
+@Article{Ses-Son_pebibl88,
+  author    = {Peter Sestoft and 
+		Harald S{\o}ndergaard},
+  title     = {A Bibliography on Partial Evaluation},
+  journal   = {SIGPLAN Notices},
+  volume    = {23},
+  number    = {2},
+  pages     = {19--27},
+  year      = {1988},
+  doi       = {10.1145/43908.43910},
+  abstract  = {This note gives a short introduction to partial evaluation 
+		and an extensive, annotated bibliography to the field. 
+		The bibliography is restricted to cover public-domain 
+		literature in English.},
+  keywords  = {Partial evaluation},
+}
+
+@Inproceedings{Son_ESOP86,
+  author    = {Harald S{\o}ndergaard},
+  title     = {An Application of Abstract Interpretation of Logic Programs:
+		Occur Check Reduction},
+  editor    = {B. Robinet and R. Wilhelm},
+  booktitle = {Proceedings of the European Symposium on Programming---ESOP 86},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {213},
+  pages     = {327--338},
+  publisher = {Springer-Verlag},
+  year      = {1986},
+  doi       = {10.1007/3-540-16442-1_25},
+  abstract  = {The occur check in Robinson unification is superfluous in most 
+		unifications that take place in practice. The present paper is 
+		concerned with the problem of determining circumstances under 
+		which the occur may safely be dispensed with. The method given 
+		draws on one outlined by David Plaisted. The framework, 
+		however, differs in that we systematically apply the abstract 
+		interpretation principle to logic programs. The aim is to give
+		a clear presentation and to facilitate justification of the 
+		soundness of the method.},
+  keywords  = {Abstract interpretation, Logic programming, Prolog, Unification},
+}
+
+@Phdthesis{Son_phd89,
+  author    = {Harald S{\o}ndergaard},
+  title	    = {Semantics-Based Analysis and Transformation of Logic Programs},
+  school    = {University of Copenhagen, Denmark},
+  year	    = {1989},
+  note	    = {Also available as: Technical Report 89/21,
+		Department of Computer Science, 
+		The University of Melbourne, 1990,
+		DIKU Report 89/22, Department of Computer Science, 
+		University of Copenhagen, 1990,
+		and Technical Report \#12,
+		Key Center for Knowledge Based Systems,
+		RMIT and the University of Melbourne, 1990},
+  abstract  = {Dataflow analysis is an essential component of many programming 
+		tools. One use of dataflow information is to identify errors in
+		a program, as done by program ``debuggers'' and type checkers.
+		Another is in compilers and other program transformers, where 
+		the analysis may guide various optimisations.
+
+		The correctness of a programming tool's dataflow analysis 
+		component is usually of paramount importance. The theory of 
+		abstract interpretation, originally developed by P. and R. 
+		Cousot aims at providing a framework for the development of 
+		correct analysis tools. In this theory, dataflow analysis is 
+		viewed as ``non-standard'' semantics, and abstract 
+		interpretation prescribes certain relations between standard
+		and non-standard semantics, in order to guarantee the 
+		correctness of the non-standard semantics with respect to the 
+		standard semantics.
+
+		The increasing acceptance of Prolog as a practical programming 
+		language has motivated widespread interest in dataflow analysis
+		of logic programs and especially in abstract interpretation.
+		Logic programmming languages are attractive from a semantical 
+		point of view, but dataflow analysis of logic programs is more 
+		complex than that of more traditional programming languages, 
+		since dataflow is bi-directional (owing to unification) and 
+		control flow is in terms of backtracking.
+
+		The present thesis is concerned with semantics-based dataflow 
+		analysis of logic programs. We first set up a theory for 
+		dataflow analysis which is basically that of abstract 
+		interpretation as introduced by P. and R. Cousot. We do, 
+		however, relax the classical theory of abstract interpretation
+		somewhat, by giving up the demand for (unique) \emph{best} 
+		approximations.
+
+		Two different kinds of analysis of logic programs are then 
+		identified: a \emph{bottom-up} analysis yields an approximation
+		to the success set (and possibly the failure set) of a program,
+		whereas a \emph{top-down} analysis yields an approximation to 
+		the call patterns that would appear during an execution based 
+		on SLD resolution. We investigate some of the uses of the two 
+		kinds of analysis. In the bottom-up case, we pay special 
+		attention to (bottom-up) type inference and its use in program 
+		specialisation. In the top-down case, we present a generic 
+		``dataflow semantics'' that encompasses many useful dataflow 
+		analyses. As an instance of the generic semantics, a groundness
+		analysis is detailed, and a series of other applications are 
+		mentioned.
+
+		We finally present a transformation technique, based on 
+		top-down analysis, for introducing difference-lists in a 
+		list-manipulating program, without changing the program's 
+		semantics. This may lead to substantial improvement in a 
+		program's execution time.},
+  keywords  = {Abstract interpretation, Abstract domains, Logic programming, 
+	  	Semantics, Many-valued logic, Unification, Groundness analysis,
+		Program transformation},
+}
+
+@Inproceedings{Son_FSTTCS96,
+  author    = {Harald S{\o}ndergaard},
+  title     = {Immediate Fixpoints and Their Use in Groundness Analysis},
+  editor    = {V. Chandru and V. Vinay},
+  booktitle = {Foundations of Software Technology and 
+		Theoretical Computer Science},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1180},
+  pages     = {359--370},
+  publisher = {Springer},
+  year      = {1996},
+  doi       = {10.1007/3-540-62034-6_63},
+  abstract  = {A theorem by Schr{\"o}der says that for a certain natural 
+		class of functions $F : B \rightarrow B$ defined on a Boolean 
+		lattice $B$, $F(x) = F(F(F(x)))$ for all $x \in B$.
+		An immediate corollary is that if such a function is monotonic 
+		then it is also idempotent, that is, $F(x) = F(F(x))$.
+		We show how this corollary can be extended to recognize cases
+		where recursive definitions can immediately be replaced by an 
+		equivalent closed form, that is, they can be solved without 
+		Kleene iteration. Our result applies more generally to 
+		distributive lattices. It has applications for example in the 
+		abstract interpretation of declarative programs and deductive 
+		databases. We exemplify this by showing how to accelerate 
+		simple cases of strictness analysis for first-order functional 
+		programs and, perhaps more successfully, groundness analysis 
+		for logic programs.},
+  keywords  = {Fixed points, Logic programming, Groundness analysis, Lattice theory},
+}
+
+@Proceedings{Son_PPDP01,
+  editor    = {Harald S{\o}ndergaard},
+  title     = {Principles and Practice of Declarative Programming},
+  publisher = {ACM Press},
+  year      = {2001},
+  keywords  = {PPDP 2001, logic programming, functional programming},
+}
+
+@InProceedings{Son_ITiCSE09,
+  author    = {Harald S{\o}ndergaard},
+  title     = {Learning From and With Peers:
+		The Different Roles of Student Peer Reviewing},
+  booktitle = {Proceedings of the 14th Annual SIGCSE/SIGCUE Conference on
+		Innovation and Technology in Computer Science Education},
+  pages     = {31--35},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY},
+  year      = {2009},
+  location  = {Paris, France},
+  doi       = {10.1145/3263191},
+  abstract  = {There are many different approaches to student peer assessment.
+		In this paper I lay out the pedagogical philosophy behind my 
+		own use of student peer reviews. These should not only be 
+		seen as adding to the amount of formative feedback in a class,
+		nor are they only about the development of certain higher-order
+		cognitive skills. Properly aligned with an overall assessment
+		strategy, peer reviewing can help build a stronger learning 
+		community. I describe such a strategy and my experience using
+		PRAZE, an online tool for student peer reviewing, as well as 
+		students' response to the tool and its use.},
+  keywords  = {Education, Peer review},
+}
+
+@InProceedings{Son_LOPSTR21,
+  author    = {Harald S{\o}ndergaard},
+  title     = {String Abstract Domains and Their Combination},
+  editor    = {E. {De Angelis} and W. Vanhoof},
+  booktitle = {Logic-Based Program Synthesis and Transformation},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13290},
+  pages     = {1--15},
+  publisher = {Springer},
+  year      = {2022},
+  doi       = {10.1007/978-3-030-98869-2_1},
+  abstract  = {We survey recent developments in string static analysis, with
+		an emphasis on how string abstract domains can be combined.
+		The paper has formed the basis for an invited presentation
+		given to LOPSTR 2021 and PPDP 2021.},
+  keywords  = {Abstract domains, String analysis},
+}
+
+@Proceedings{Son-Had_AAEE07,
+  editor    = {Harald S{\o}ndergaard and 
+		Roger Hadgraft},
+  title     = {Proceedings of the 18th Conference of the 
+		Australasian Association for Engineering Education},
+  publisher = {Department of Computer Science and Software Engineering,
+		The University of Melbourne, Vic 3010, Australia},
+  month     = {December},
+  year      = {2007},
+  isbn      = {978--0--9757172--1--9},
+  note      = {Published on CD-ROM and online},
+  keywords  = {Education},
+}
+
+@article{Son-Mul_CSE12,
+  author    = {Harald S{\o}ndergaard and 
+		Raoul Mulder},
+  title     = {Collaborative Learning through Formative Peer Review:
+		Pedagogy, Programs and Potential},
+  journal   = {Computer Science Education},
+  volume    = {22},
+  number    = {4},
+  pages     = {343--367},
+  year      = {2012},
+  doi       = {10.1080/08993408.2012.728041},
+  abstract  = {We examine student peer review, with an emphasis on 
+		formative practice and collaborative learning, rather 
+		than peer grading. Opportunities to engage students in 
+		such formative peer assessment are growing, as a range 
+		of online tools become available to manage and simplify 
+		the process of administering student peer review. 
+		We consider whether pedagogical requirements for student
+		peer review are likely to be discipline-specific, taking
+		computer science and software engineering as an example.
+		We then summarise what attributes are important for a 
+		modern generic peer review tool, and classify tools 
+		according to four prevalent emphases, using currently 
+		available, mature tools to illustrate each. We conclude 
+		by identifying some gaps in current understanding of 
+		formative peer review, and discuss how online tools for 
+		student peer review can help create opportunities to 
+		answer some of these questions.},
+  keywords  = {Education, Peer review},
+}
+
+@Article{Son-Ses_ACTA90,
+  author    = {Harald S{\o}ndergaard and 
+		Peter Sestoft},
+  title	    = {Referential Transparency, Definiteness and Unfoldability},
+  journal   = {Acta Informatica},
+  volume    = {27},
+  number    = {6},
+  pages	    = {505--517},
+  year	    = {1990},
+  note	    = {Reviewed in Computing Reviews 32(3): 144--145, 1991},
+  doi       = {10.1007/BF00277387},
+  abstract  = {The term ``referential transparency'' is frequently used
+		to indicate that a programming language has certain useful
+		properties. We observe, however, that the formal and
+		informal definitions given in the literature are not
+		equivalent and we investigate their relationships.
+		To this end, we study the definitions in the context of
+		a simple expression language and show that in the presence
+		of non-determinism, the differences are manifest. We 
+		propose a definition of ``referential transparency'', based
+		on Quine's, as well as of the related notions: definiteness
+		and unfoldability. We demonstrate that these notions are
+		useful to characterize programming languages.},
+  keywords  = {Programming language concepts, Nondeterminism, Semantics},
+}
+
+@Article{Son-Ses_CJ92,
+  author    = {Harald S{\o}ndergaard and 
+		Peter Sestoft},
+  title     = {Non-Determinism in Functional Languages},
+  journal   = {The Computer Journal},
+  volume    = {35},
+  number    = {5},
+  pages	    = {514--523},
+  year	    = {1992},
+  doi       = {10.1093/comjnl/35.5.514},
+  abstract  = {The introduction of a non-deterministic operator in even a
+		very simple functional programming language gives rise to
+		a plethora of semantic questions. These questions are not 
+		only concerned with the choice operator itself. A
+		surprisingly large number of different parameter passing
+		mechanisms are made possible by the introduction of bounded
+		non-determinism. The diversity of semantic possibilities
+		is examined systematically using denotational definitions
+		based on mathematical structures called powerdomains. This
+		results in an improved understanding of the different kinds
+		of non-determinism and the properties of different kinds of
+		non-deterministic languages.},
+  keywords  = {Programming language concepts, Nondeterminism, Functional programming, Semantics},
+}
+
+@InProceedings{Son-Tho_FIE04,
+  author    = {Harald S{\o}ndergaard and 
+		Doreen Thomas},
+  title     = {Effective Feedback to Small and Large Classes},
+  booktitle = {Proceedings of the 2004 ASEE/IEEE Frontiers in
+		Education Conference (FIE2004)},
+  pages     = {F1E-9--F1E-14},
+  location  = {Savannah GA},
+  month     = {oct},
+  year      = {2004},
+  doi       = {10.1109/FIE.2004.1408573},
+  abstract  = {Educational experts appear to be in broad agreement when it 
+		comes to the importance of feedback for effective learning.  
+		Students benefit from plenty of opportunity and encouragement 
+		to express their understanding, and from informed, supportive, 
+		possibly challenging, feedback. At the same time, we observe 
+		that many students at our university do not find that they 
+		receive helpful feedback. One in three Engineering students 
+		disagree or strongly disagree with the Quality of Teaching 
+		questionnaire's ``I received helpful feedback on how I was 
+		going'' in the individual course, and most other disciplines 
+		find themselves in a similar situation. For the university as 
+		a whole, student responses to this question are clearly less 
+		positive than to other questions on quality of teaching,
+		intellectual stimulation, staff interest, workload, and so on,
+		and this state of affairs seems quite common in the Australian
+		context. We discuss best practice in feedback provision, partly
+		based on our interviews with students and staff. We have been 
+		particularly interested in identifying cost-effective ways of 
+		providing informed and constructive feedback to large classes.
+		Feedback is often understood, by Engineering students and staff
+		alike, simply as comments on submitted work---typically written
+		assignments. We argue in favour of a broader concept that 
+		covers a multitude of ways for a student to develop deep 
+		learning through conversation, including questions and answers
+		provided by others, team work, study groups, and formative
+		teacher-provided feedback during an assessment task. We 
+		emphasise the coaching role of the teacher, and feedback 
+		designed to encourage students to monitor own learning. Large 
+		classes pose particular logistic problems. We identify staff 
+		development as a crucial factor for consistent, effective 
+		feedback, and point to web-based feedback provision as a 
+		workable solution to some logistic problems. We briefly discuss
+		the role of information technology more broadly, both for 
+		learning enhancement and for automated feedback provision.},
+  keywords  = {Education},
+}
+
+@Inproceedings{Spe-Som-Son_SAS97,
+  author    = {Chris Speirs and 
+		Zoltan Somogyi and 
+		Harald S{\o}ndergaard},
+  title     = {Termination Analysis for {Mercury}},
+  editor    = {P. {Van Hentenryck}},
+  booktitle = {Static Analysis: 
+		Proceedings of the Fourth International Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1302},
+  pages     = {157--171},
+  publisher = {Springer},
+  year      = {1997},
+  doi       = {10.1007/bfb0032740},
+  abstract  = {Since the late eighties, much progress has been made in the 
+		theory of termination analysis for logic programs. However, the
+		practical significance of much of this work is hard to judge, 
+		since experimental evaluations rarely get published. Here we 
+		describe and evaluate a termination analyzer for Mercury, a 
+		strongly typed and moded logic-functional programming language.
+		Mercury's high degree of referential transparency and the 
+		guaranteed availability of reliable mode information simplify 
+		termination analysis. Our analyzer uses a variant of a method 
+		developed by Pl{\"u}mer. It deals with full Mercury, including 
+		modules and I/O. In spite of these obstacles, it produces 
+		state-of-the-art termination information, while having a 
+		negligible impact on the running time of the compiler of which
+		it is part, even for large programs.},
+  keywords  = {Logic programming, Mercury, Termination analysis},
+}
+
+@InProceedings{Ste-Son-Nai_ITiCSE99,
+  author    = {Linda Stern and 
+		Harald S{\o}ndergaard and 
+		Lee Naish},
+  title     = {A Strategy for Managing Content Complexity in
+		Algorithm Animation},
+  editor    = {B. Manaris},
+  booktitle = {Proceedings of the Fourth Annual SIGCSE/SIGCUE Conference on
+		Innovation and Technology in Computer Science Education},
+  pages     = {127--130},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY},
+  year      = {1999},
+  location  = {Cracow, Poland},
+  doi       = {10.1145/305786.305891},
+  abstract  = {Computer animation is an excellent medium for capturing 
+		the dynamic nature of data structure manipulations, and 
+		can be used to advantage in the teaching of algorithms 
+		and data structures. A major educational issue is the 
+		necessity of providing a means for the student to manage 
+		the complexity of the material. We have addressed this
+		issue in a multimedia teaching tool called ``Algorithms in
+		Action'' by allowing students to view an algorithm at 
+		varying levels of detail. Starting with a high level 
+		pseudocode description of the algorithm, with accompanying 
+		high level animation and textual explanation, students can 
+		expand sections of the pseudocode to expose more detail.
+		Animation and explanation are controlled in coordinate
+		fashion, becoming correspondingly more detailed as the 
+		pseudocode is expanded. Student feedback suggests that the
+		availability of multiple levels detail and the facility
+		for the user to control the level of detail being viewed
+		is an effective way to manage content complexity.},
+  keywords  = {Education, Algorithm visualisation, Web-based learning},
+}
+
+@inproceedings{Wan-Son-Stu_CPAIOR16,
+  author    = {Wenxi Wang and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {A Bit-Vector Solver with Word-Level Propagation},
+  editor    = {C.-G. Quimper},
+  booktitle = {Integration of AI and OR Techniques in Constraint Programming:
+                Proceedings of the 13th International Conference},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9676},
+  pages     = {374--391},
+  publisher = {Springer International Publishing},
+  year      = {2016},
+  isbn      = {978-3-319-33953-5},
+  doi       = {10.1007/978-3-319-33954-2_27},
+  abstract  = {Reasoning with bit-vectors arises in a variety of 
+		applications in verification and cryptography. 
+		Michel and Van Hentenryck have proposed an interesting 
+		approach to bit-vector constraint propagation on the 
+		word level. Each of the operations except comparison 
+		are constant time, assuming the bit-vector fits in a 
+		machine word. In contrast, bit-vector SMT solvers 
+		usually solve bit-vector problems by bit-blasting, 
+		that is, mapping the resulting operations to conjunctive 
+		normal form clauses, and using SAT technology to solve 
+		them. This also means generating intermediate variables 
+		which can be an advantage, as these can be searched on 
+		and learnt about. Since each approach has advantages 
+		it is important to see whether we can benefit from 
+		these advantages by using a word-level propagation 
+		approach with learning. In this paper we describe an 
+		approach to bit-vector solving using word-level 
+		propagation with learning. We provide alternative 
+		word-level propagators to Michel and Van Hentenryck, 
+		and give the first empirical evaluation of their approach
+		that we are aware of. We show that, with careful 
+		engineering, a word-level propagation based approach 
+		can compete with (or complement) bit-blasting.},
+  keywords  = {SMT solving, Constraint propagation, Program verification},
+}
+
+@article{Wan-Son-Stu_JAR19,
+  author    = {Wenxi Wang and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Wombit: A Portfolio Bit-Vector Solver Using Word-Level 
+		Propagation},
+  journal   = {Journal of Automated Reasoning},
+  volume    = {63},
+  number    = {3},
+  pages     = {723--762},
+  year      = {2019},
+  doi       = {10.1007/s10817-018-9493-1},
+  abstract  = {We develop an idea originally proposed by Michel and Van 
+		Hentenryck of how to perform bit-vector constraint propagation 
+		on the word level. Most operations are propagated in constant 
+		time, assuming the bit-vector fits in a machine word.
+		In contrast, bit-vector SMT solvers usually solve bit-vector 
+		problems by (ultimately) bit-blasting, that is, mapping the 
+		resulting operations to conjunctive normal form clauses, and 
+		using SAT technology to solve them. Bit-blasting generates 
+		intermediate variables which can be an advantage, as these can 
+		be searched on and learnt about. As each approach has 
+		advantages, it makes sense to try to combine them. In this 
+		paper, we describe an approach to bit-vector solving using
+		word-level propagation with learning. We have designed 
+		alternative word-level propagators to Michel and Van 
+		Hentenryck's, and evaluated different variants of the approach.
+		We have also experimented with different approaches to learning
+		and back-jumping in the solver. Based on the insights gained, 
+		we have built a portfolio solver, Wombit, which essentially 
+		extends the STP bit-vector solver. Using machine learning 
+		techniques, the solver makes a judicious up-front decision 
+		about whether to use word-level propagation or fall back on 
+		bit-blasting.},
+  keywords  = {SMT solving, Constraint propagation, Program verification},
+}
