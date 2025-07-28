@@ -1,0 +1,532 @@
+@inproceedings{Ala-Mil-Son_ASWEC15,
+  author    = {Eman Alatawi and 
+		Tim Miller and 
+		Harald S{\o}ndergaard},
+  title     = {Using Metamorphic Testing to Improve Dynamic Symbolic Execution},
+  booktitle = {Proceedings of the 24th Australasian Software Engineering
+                Conference (ASWEC 2015)},
+  pages     = {38--47},
+  publisher = {IEEE Computing Society},
+  year      = {2015},
+  doi       = {10.1109/ASWEC.2015.16},
+  abstract  = {Dynamic symbolic execution (DSE) is an approach for automatically
+		generating test inputs from source code using constraint 
+		information. It is used in \emph{fuzzing}: the execution of 
+		tests while monitoring for generic properties such as buffer 
+		overflows and other security violations. Limitations of DSE for
+		fuzzing are two-fold: (1) only generic properties are checked: 
+		many deviations from specified behaviour are not found; and 
+		(2) many programs are not entirely amenable to DSE because they
+		give rise to hard constraints, so that some parts of a program 
+		remain uncovered. In this paper, we discuss how to mitigate 
+		these problems using \emph{metamorphic testing} (MT). 
+		Metamorphic testing uses domain-specific properties about 
+		program behaviour, relating pairs of inputs to pairs of outputs.
+		From a given test suite, \emph{follow-up tests inputs} are 
+		generated, and their outputs are compared to outputs from the 
+		original tests, using \emph{metamorphic relations}. Our 
+		hypothesis is that using metamorphic testing increases the 
+		ability of a DSE test suite to find faults, and that the 
+		follow-up tests execute some previously-uncovered segments. 
+		We have experimented with seven small but non-trivial libraries,
+		comparing DSE test suites with DSE+MT test suites, demonstrating
+		that DSE+MT test suites improve coverage marginally, but find 
+		more faults.},
+  keywords  = {Symbolic execution, Testing},
+}
+
+@inproceedings{Ala-Mil-Son_ASWEC18,
+  author    = {Eman Alatawi and 
+		Tim Miller and 
+		Harald S{\o}ndergaard},
+  title     = {Symbolic Execution with Invariant Inlay:
+                Evaluating the Potential},
+  booktitle = {Proceedings of the 25th Australasian Software Engineering
+                Conference (ASWEC 2018)},
+  pages     = {26--30},
+  publisher = {IEEE Computing Society},
+  year      = {2018},
+  doi       = {10.1109/ASWEC.2018.00012},
+  url_Paper = {https://minerva-access.unimelb.edu.au/rest/bitstreams/38cf593c-2b7f-5e30-aa42-13b74180ed5d/retrieve},
+  abstract  = {Dynamic symbolic execution (DSE) is a non-standard execution 
+		mechanism which, loosely, executes a program symbolically and, 
+		simultaneously, on concrete input. DSE is attractive because of
+		several uses in software engineering, including the generation
+		of test data suites with large coverage relative to test suite
+		size. However, DSE struggles in the face of execution path 
+		explosion, and is often unable to cover certain kinds of 
+		difficult-to-reach program points. Invariant inlay is a 
+		technique that aims to improve a DSE tool by interspersing code
+		with invariants, generated automatically using off-the-shelf 
+		tools for static program analysis. To capitalise fully on a 
+		static analyzer, invariant inlay first applies certain 
+		testability transformations to the program source. In this 
+		paper we account for how we have evaluated the idea 
+		experimentally, in order to determine its usefulness for
+		programs with complex control flow.},
+  keywords  = {Symbolic execution, Static analysis},
+}
+
+@inproceedings{Ala-Mil-Son_MET16,
+  author    = {Eman Alatawi and 
+		Tim Miller and 
+		Harald S{\o}ndergaard},
+  title     = {Generating Source Inputs for Metamorphic Testing
+                Using Dynamic Symbolic Execution},
+  booktitle = {MET'16: Proceedings of the First International Workshop on
+                Metamorphic Testing},
+  pages     = {19--25},
+  publisher = {ACM},
+  year      = {2016},
+  doi       = {10.1145/2896971.2896980},
+  isbn      = {978-1-4503-4163-9},
+  abstract  = {Metamorphic testing uses domain-specific properties about
+                a program's intended behaviour to alleviate the oracle
+                problem. From a given set of source test inputs, a set of
+                follow-up test inputs are generated which have some
+                relation to the source inputs, and their outputs are
+                compared to outputs from the source tests, using
+                metamorphic relations.  We evaluate the use of an
+                automated test input generation technique called dynamic
+                symbolic execution (DSE) to generate the source test
+                inputs for metamorphic testing. We investigate whether
+                DSE increases source-code coverage and fault finding
+                effectiveness of metamorphic testing compared to the use
+                of random testing, and whether the use of metamorphic
+                relations as a supportive technique improves the test
+                inputs generated by DSE. Our results show that DSE
+                improves the coverage and fault detection rate of
+                metamorphic testing compared to random testing using
+                significantly smaller test suites, and the use of
+                metamorphic relations increases code coverage of both
+                DSE and random tests considerably, but the improvement
+                in the fault detection rate may be marginal and depends
+                on the used metamorphic relations.},
+  keywords  = {Symbolic execution, Testing},
+}
+
+@inproceedings{Ala-Son-Mil_ASE17,
+  author    = {Eman Alatawi and 
+		Harald S{\o}ndergaard and
+		Tim Miller},
+  title     = {Leveraging Abstract Interpretation for Efficient Dynamic 
+		Symbolic Execution},
+  editor    = {G. Rosu and  M. {Di Penta} and T. N. Nguyen},
+  booktitle = {Proceedings of the 32nd ACM/IEEE International Conference on 
+		Automated Software Engineering},
+  pages     = {619--624},
+  publisher = {IEEE Computing Society},
+  year      = {2017},
+  doi       = {10.1109/ASE.2017.8115672},
+  url_Paper = {https://minerva-access.unimelb.edu.au/rest/bitstreams/7d0c6934-364c-5596-b09d-d0e55f344c13/retrieve},
+  abstract  = {Dynamic Symbolic Execution (DSE) is a technique to automatically
+		generate test inputs by executing the program simultaneously 
+		with concrete and symbolic values. A key challenge in DSE is 
+		scalability, as executing all feasible program paths is not 
+		possible, owing to the possibly exponential or infinite number 
+		of program paths. Loops, in particular those where the number 
+		of iterations depends on an input of the program, are a source 
+		of path explosion. They cause problems because DSE maintains 
+		symbolic values that capture only the data dependencies on
+		symbolic inputs. This ignores control dependencies, including 
+		loop dependencies that depend indirectly on the inputs. We 
+		propose a method to increase the coverage achieved by DSE in 
+		the presence of input-data dependent loops and loop dependent 
+		branches. We combine DSE with abstract interpretation to find 
+		indirect control dependencies, including loop and branch 
+		indirect dependencies. Preliminary results show that this 
+		results in better coverage, within considerably less time 
+		compared to standard DSE.},
+  keywords  = {Symbolic execution, Static analysis, Abstract interpretation},
+}
+
+@inproceedings{Ama-And-Gan-Sch-Son-Stu_CPAIOR19,
+  author    = {Roberto Amadini and 
+		Mak Andrlon and 
+		Graeme Gange and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey},
+  title     = {Constraint Programming for Dynamic Symbolic Execution of
+                {JavaScript}},
+  editor    = {L.-M. Rousseau and K. Stergiou},
+  booktitle = {Integration of Constraint Programming, Artificial Intelligence,
+		and Operations Research: Proceedings of the 16th International
+		Conference (CPAIOR 2019)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11494}, 
+  pages     = {1--19},
+  year      = {2019},
+  doi       = {10.1007/978-3-030-19212-9_1},
+  url_Paper = {https://minerva-access.unimelb.edu.au/rest/bitstreams/b999c802-90f6-5ce4-8b79-c298bfc62afa/retrieve},
+  abstract  = {Dynamic Symbolic Execution (DSE) combines concrete and symbolic 
+		execution, usually for the purpose of generating good test 
+		suites automatically.  It relies on constraint solvers to solve
+		path conditions and to generate new inputs to explore. DSE 
+		tools usually make use of SMT solvers for constraint solving.
+		In this paper, we show that constraint programming (CP) is a
+		powerful alternative or complementary technique for DSE.
+		Specifically, we apply CP techniques for DSE of JavaScript, the
+		de facto standard for web programming. We capture the JavaScript
+		semantics with MiniZinc and integrate this approach into a tool
+		we call \textsc{Aratha}. We use \textsc{G-Strings}, a CP solver
+		equipped with string variables, for solving path conditions, 
+		and we compare the performance of this approach against 
+		state-of-the-art SMT solvers. Experimental results, in terms of
+		both speed and coverage, show the benefits of our approach,
+		thus opening new research vistas for using CP techniques in 
+		the service of program analysis.},
+  keywords  = {Symbolic execution, Constraint programming, String solvers, JavaScript},
+}
+
+@Article{Ama-Gan-Gau-Jor-Sch-Son-Stu-Zha_FI18,
+  author    = {Roberto Amadini and 
+		Graeme Gange and 
+		Fran{\c{c}}ois Gauthier and
+		Alexander Jordan and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey and
+		Chenyi Zhang},
+  title     = {Reference Abstract Domains and Applications to String Analysis},
+  journal   = {Fundamenta Informaticae},
+  volume    = {158},
+  number    = {4},
+  pages     = {297--326},
+  year      = {2018},
+  doi       = {10.3233/FI-2018-1650},
+  url_Paper = {https://minerva-access.unimelb.edu.au/rest/bitstreams/c17b2e2c-f7ea-57c4-8d54-926629bfa3f7/retrieve},
+  abstract  = {Abstract interpretation is a well established theory that 
+		supports reasoning about the run-time behaviour of programs.
+		It achieves tractable reasoning by considering abstractions of
+		run-time states, rather than the states themselves. The chosen
+		set of abstractions is referred to as the abstract domain.
+		We develop a novel framework for combining (a possibly large 
+		number of) abstract domains. It achieves the effect of the 
+		so-called reduced product without requiring a quadratic number
+		of functions to translate information among abstract domains. A
+		central notion is a reference domain, a medium for information
+		exchange. Our approach suggests a novel and simpler way to 
+		manage the integration of large numbers of abstract domains.
+		We instantiate our framework in the context of string analysis.
+		Browser-embedded dynamic programming languages such as 
+		JavaScript and PHP encourage the use of strings as a universal
+		data type for both code and data values. The ensuing 
+		vulnerabilities have made string analysis a focus of much
+		recent research. String analysis tends to combine many 
+		elementary string abstract domains, each designed to capture 
+		a specific aspect of strings. For this instance the set of 
+		regular languages, while too expensive to use directly for 
+		analysis, provides an attractive reference domain, enabling 
+		the efficient simulation of reduced products of multiple
+		string abstract domains.},
+  keywords  = {String analysis, Abstract interpretation},
+}
+
+@inproceedings{Ama-Gan-Sch-Son-Stu_DIPL20,
+  author    = {Roberto Amadini and 
+		Graeme Gange and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey}, 
+  title     = {Abstract Interpretation, Symbolic Execution and Constraints},
+  editor    = {F. S. {de Boer} and J. Mauro},
+  booktitle = {Recent Developments in the Design and Implementation of 
+		Programming Languages},
+  series    = {OpenAccess Series in Informatics},
+  volume    = {86}, 
+  pages     = {7:1--7:19},
+  publisher = {Schloss Dagstuhl-Leibniz-Zentrum f{\"u}r Informatik},
+  year      = {2020},
+  doi       = {10.4230/OASIcs.Gabbrielli.2020.7},
+  url_Paper = {https://drops.dagstuhl.de/opus/volltexte/2020/13229/pdf/OASIcs-Gabbrielli-7.pdf},
+  abstract  = {Abstract interpretation is a static analysis framework for 
+		sound over-approximation of all possible runtime states of 
+		a program. Symbolic execution is a framework for reachability
+		analysis which tries to explore all possible execution paths 
+		of a program. A shared feature between abstract interpretation
+		and symbolic execution is that each---implicitly or 
+		explicitly---maintains constraints during execution, 
+		in the form of invariants or path conditions.
+		We investigate the relations between the worlds of abstract 
+		interpretation, symbolic execution and constraint solving, 
+		to expose potential synergies.},
+  keywords  = {Constraint programming, Symbolic execution, Abstract interpretation},
+}
+
+@inproceedings{Ama-Gan-Sch-Son-Stu_ECAI20,
+  author    = {Roberto Amadini and 
+		Graeme Gange and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey}, 
+  title     = {String Constraint Solving: Past, Present and Future},
+  editor    = {G. {De Giacomo} and others},
+  booktitle = {Proceedings of the 24th European Conference on 
+		Artificial Intelligence},
+  pages     = {2875--2876},
+  publisher = {IOS Press},
+  year      = {2020},
+  doi       = {10.3233/FAIA200431},
+  url_Paper = {https://ebooks.iospress.nl/pdf/doi/10.3233/FAIA200431},
+  abstract  = {String constraint solving is an important emerging field, 
+		given the ubiquity of strings over different fields such as
+		formal analysis, automated testing, database query processing,
+		and cybersecurity. This paper highlights the current 
+		state-of-the-art for string constraint solving, and 
+		identifies future challenges in this field.},
+  keywords  = {String solvers},
+}
+
+@inproceedings{Ama-Gan-Sch-Son-Stu_LOPSTR20,
+  author    = {Roberto Amadini and 
+		Graeme Gange and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey}, 
+  title     = {Algorithm Selection for Dynamic Symbolic Execution: 
+		A Preliminary Study},
+  editor    = {M. Fern{\'a}ndez},
+  booktitle = {Logic-Based Program Synthesis and Transformation},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12561}, 
+  pages     = {192--209},
+  year      = {2020},
+  doi       = {10.1007/978-3-030-68446-4_10},
+  abstract  = {Given a portfolio of algorithms, the goal of Algorithm Selection
+		(\textsf{AS}) is to select the best algorithm(s) for a new, 
+		unseen problem instance. Dynamic Symbolic Execution 
+		(\textsf{DSE}) brings together concrete and symbolic execution 
+		to maximise the program coverage. \textsf{DSE} uses a 
+		constraint solver to solve the path conditions and generate 
+		new inputs to explore. In this paper we join these lines of 
+		research by introducing a model that combines \textsf{DSE} and
+		\textsf{AS} approaches. The proposed \textsf{AS/DSE} model is 
+		a generic and flexible framework enabling the \dse engine to 
+		solve the path conditions it collects with a portfolio of 
+		different solvers, by exploiting and extending the well-known
+		\textsf{AS} techniques that have been developed over the last 
+		decade. In this way, one can increase the coverage and 
+		sometimes even outperform the aggregate coverage achievable 
+		by running simultaneously all the solvers of the portfolio.},
+  keywords  = {Symbolic execution},
+}
+
+@InProceedings{Ama-Jor-Gan-Gau-Sch-Son-Stu-Zha_TACAS17,
+  author    = {Roberto Amadini and 
+		Alexander Jordan and 
+		Graeme Gange and 
+		Fran{\c{c}}ois Gauthier and
+		Peter Schachte and 
+		Harald S{\o}ndergaard and 
+		Peter J. Stuckey and
+		Chenyi Zhang},
+  title     = {Combining String Abstract Domains for {JavaScript} Analysis: 
+		An Evaluation},
+  editor    = {A. Legay and T. Margaria},
+  booktitle = {TACAS 2017: Proceedings of the 23rd International
+		Conference on Tools and Algorithms for the Construction 
+		and Analysis of Systems},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10205},
+  pages     = {41--57},
+  publisher = {Springer},
+  year      = {2017},
+  doi       = {10.1007/978-3-662-54577-5_3},
+  abstract  = {Strings play a central role in JavaScript and similar scripting
+		languages. Owing to dynamic features such as the eval function
+		and dynamic property access, precise string analysis is a 
+		prerequisite for automated reasoning about practically any 
+		kind of runtime property. Although the literature presents 
+		a considerable number of abstract domains for capturing and 
+		representing specific aspect of strings, we are not aware of 
+		tools that allow flexible combination of string abstract 
+		domains. Indeed, support for string analysis is often confined
+		to a single, dedicated string domain. In this paper we 
+		describe a framework that allows us to combine multiple string
+		abstract domains for the analysis of JavaScript programs. 
+		It is implemented as an extension of SAFE, an open-source 
+		static analysis tool. We investigate different combinations 
+		of abstract domains that capture various aspects of strings.
+		Our evaluation suggests that a combination of few, simple 
+		abstract domains suffice to outperform the precision of 
+		state-of-the-art static analysis tools for JavaScript.},
+  keywords  = {String solvers, Abstract domains, Abstract interpretation, JavaScript},
+}
+
+@Inproceedings{And-Sch-Son-Stu_ARITH19,
+  author    = {Mak Andrlon and
+		Peter Schachte and
+		Harald S{\o}ndergaard and
+		Peter J. Stuckey},
+  title     = {Optimal Bounds for Floating-Point Addition in Constant Time},
+  editor    = {N. Takagi and S. Boldo and M. Langhammer},
+  booktitle = {Proceedings of the 26th IEEE Symposium on Computer Arithmetic 
+		(ARITH 2019)},
+  pages     = {159--166},
+  publisher = {IEEE Conf. Publ.},
+  year      = {2019},
+  doi       = {10.1109/arith.2019.00038},
+  abstract  = {Reasoning about floating-point numbers is notoriously difficult,
+		owing to the lack of convenient algebraic properties such as 
+		associativity. This poses a substantial challenge for program 
+		analysis and verification tools which rely on precise 
+		floating-point constraint solving. Currently, interval methods 
+		in this domain often exhibit slow convergence even on simple 
+		examples. We present a new theorem supporting efficient 
+		computation of exact bounds of the intersection of a rectangle 
+		with the preimage of an interval under floating-point addition,
+		in any radix or rounding mode. We thus give an efficient method
+		of deducing optimal bounds on the components of an addition, 
+		solving the convergence problem.},
+  keywords  = {Constraint solving, Machine arithmetic},
+}
+
+@Inproceedings{Arm-Mar-Sch-Son_SAS94,
+  author    = {Tania Armstrong and 
+		Kim Marriott and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard},
+  title     = {{Boolean} Functions for Dependency Analysis:
+		Algebraic Properties and Efficient Representation},
+  editor    = {B. {Le Charlier}},
+  booktitle = {Static Analysis: Proceedings of the First International 
+		Symposium},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {864},
+  pages     = {266--280},
+  publisher = {Springer-Verlag},
+  year      = {1994},
+  doi       = {10.1007/3-540-58485-4_46},
+  abstract  = {Many analyses for logic programming languages use Boolean 
+		functions to express dependencies between variables or argument
+		positions. Examples include groundness analysis, arguably the 
+		most important analysis for logic programs, finiteness analysis 
+	      	and functional dependency analysis. We identify two classes of 
+		Boolean functions that have been used: positive and definite 
+		functions, and we systematically investigate these classes and 
+		their efficient implementation for dependency analyses. We 
+		provide syntactic characterizations and study their algebraic 
+		properties. In particular, we show that both classes are closed
+		under existential quantification. We investigate representations
+		for these classes based on: reduced ordered binary decision 
+		diagrams (ROBDDs), disjunctive normal form, conjunctive normal 
+		form, Blake canonical form, dual Blake canonical form, and a 
+		form specific to definite functions. We give an  empirical 
+		comparison of these different representations for groundness 
+		analysis.},
+  keywords  = {Boolean logic, Abstract domains, Abstract interpretation, Logic programming},
+}
+
+@Article{Arm-Mar-Sch-Son_SCP98,
+  author   = {Tania Armstrong and 
+		Kim Marriott and 
+		Peter Schachte and 
+		Harald S{\o}ndergaard},
+  title	   = {Two Classes of {Boolean} Functions for Dependency Analysis},
+  journal  = {Science of Computer Programming},
+  volume   = {31},
+  number   = {1},
+  pages    = {3--45},
+  year	   = {1998},
+  doi       = {10.1016/S0167-6423(96)00039-1},
+  abstract = {Many static analyses for declarative programming/database 
+		languages use Boolean functions to express dependencies 
+		among variables or argument positions. Examples include 
+		groundness analysis, arguably the most important analysis for 
+		logic programs, finiteness analysis and functional dependency 
+		analysis for databases. We identify two classes of Boolean 
+		functions that have been used: positive and definite functions,
+		and we systematically investigate these classes and their 
+		efficient implementation for dependency analyses. On the 
+		theoretical side we provide syntactic characterizations and
+		study the expressiveness and algebraic properties of the 
+		classes. In particular, we show that both are closed under 
+		existential quantification. On the practical side we 
+		investigate various representations for the classes based on 
+		reduced ordered binary decision diagrams (ROBDDs), disjunctive 
+		normal form, conjunctive normal form, Blake canonical form, 
+		dual Blake canonical form, and a form specific to definite 
+		functions. We compare the resulting implementations of 
+		groundness analyzers based on the representations for precision
+		and efficiency.},
+  keywords  = {Boolean logic, Abstract domains, Abstract interpretation, Logic programming},
+}
+
+@Inproceedings{Bai-Crn-Ram-Son_ICDT97,
+  author    = {James Bailey and 
+		Lobel Crnogorac and 
+		Kotagiri Ramamohanarao and 
+		Harald S{\o}ndergaard},
+  title     = {Abstract Interpretation of Active Rules and Its Use in
+		Termination Analysis},
+  editor    = {F. Afrati and P. Kolaitis},
+  booktitle = {Database Theory---ICDT'97},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1186},
+  pages     = {188--202},
+  publisher = {Springer},
+  year      = {1997},
+  doi       = {10.1007/3-540-62222-5_45},
+  abstract  = {The behaviour of rules in an active database system can be
+		difficult to predict, and much work has been devoted to the
+		development of automatic support for reasoning about properties
+		such as confluence and termination. We show how abstract 
+		interpretation can provide a generic framework for analysis of
+		active rules. Abstract interpretation is a well-understood, 
+		semantics-based method for static analysis. Its advantage, 
+		apart from generality, lies in the separation of concerns: 
+		Once the underlying semantics has been captured formally, a 
+		variety of analyses can be derived, almost for free, as 
+		\emph{approximations} to the semantics. Moreover, powerful 
+		general theorems enable simple proofs of global correctness 
+		and uniform termination of specific analyses. We outline these
+		ideas and present, as an example application, a new method for 
+		termination analysis. In terms of precision, the method 
+		compares favourably with previous solutions to the problem.
+		This is because the method investigates the flow of data 
+		rather than just the syntax of conditions and actions.},
+  keywords  = {Termination analysis, Abstract interpretation, Active databases},
+}
+
+@inproceedings{Bak-Son_ACSC93,
+  author    = {Naomi Baker and 
+		Harald S{\o}ndergaard},
+  title     = {Definiteness Analysis for {CLP(R)}},
+  editor    = {G. Gupta and G. Mohay and R. Topor},
+  booktitle = {Proceedings of the Sixteenth Australian Computer Science 
+		Conference},
+  series    = {Australian Computer Science Communications},
+  volume    = {15},
+  number    = {1},
+  pages     = {321--332},
+  year      = {1993},
+  abstract  = {Constraint logic programming (CLP) languages generalise
+		logic programming languages, amalgamating logic programming
+		and constraint programming.  Combining the best of two
+		worlds, they provide powerful tools for wide classes
+		of problems.  As with logic programming languages, code
+		optimization by compilers is an important issue in the
+		implementation of CLP languages.  A compiler needs
+		sophisticated global information, collected by dataflow
+		analyses, to generate competitive code.
+		One kind of useful dataflow information concerns the point
+		at which variables become definite, that is, constrained
+		to take a unique value.  In this paper we present a very
+		precise dataflow analysis to determine definiteness, and we
+		discuss its applications.  By separating the two concerns:
+		correctness and implementation techniques, abstract
+		interpretation enables us to develop a sophisticated
+		dataflow analysis in a straightforward manner, in fact in
+		a framework where the correctness of the analysis is easily
+		established---a feature which is uncommon when complex
+		analyses are developed in an ad hoc way.
+		We use a class of Boolean functions, the positive functions,
+		to represent the definiteness relationship between variables.
+		A Boolean function is interpreted as expressing a relation
+		which holds not simply at the given point in an evaluation,
+		but in fact during the rest of the evaluation branch.
+		The nature of variables in a CLP language makes this
+		treatment both possible and natural.},
+  keywords  = {Constraint logic programming, Boolean logic, Abstract interpretation},
+}
